@@ -2,7 +2,7 @@
 > This metric counts the scans created in AST
 
 - Type: *Counter*
-- Name: astScansCreated_events_total
+- Name: scansCreated_events_total
 
 ## Event
 | Entity        | Action |
