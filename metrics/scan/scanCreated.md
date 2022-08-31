@@ -46,7 +46,7 @@ Example:
 - Scans Created  By Source
 - Scans Created  By Scanners
 - Scans Created  By Scanner groups
-- Total Scans
+- Total Scans Created
 
 
  
