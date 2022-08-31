@@ -11,10 +11,9 @@
 
 ## Tags
 
-> __Source__  This is a note.
-
- <span style="color: green"> Some green text </span>
-- source        *from grpc ast-core-scan/getScanDetails*
+> __source__  *from grpc ast-core-scan/getScanDetails*
+> __origin__  *from grpc ast-core-scan/getScanDetails*
+        
 - origin        *from grpc ast-core-scan/getScanDetails*
 - scanners      `multi values` *from grpc ast-core-scan/getScanDetails*
 - projectId     *from event*
