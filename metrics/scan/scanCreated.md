@@ -12,9 +12,8 @@
 
 ## Tags
 
-> __Test__
-> This is a note.
 Some Markdown text with <span style="color:blue">some *blue* text</span>.
+
  <span style="color: green"> Some green text </span>
 - source        *from grpc ast-core-scan/getScanDetails*
 - origin        *from grpc ast-core-scan/getScanDetails*
