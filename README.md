@@ -14,7 +14,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Scan Metrics
 
- - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15` <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">Scan Created</a>
+ `#f03c15` <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Scan Created`</a>
  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">Scan Completed</a>
  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">Scan Failed</a>
  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">Scan Created</a>
