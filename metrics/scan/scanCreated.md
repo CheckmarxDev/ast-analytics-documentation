@@ -11,8 +11,8 @@
 
 
 ## Tags
-Source: >test
-> __Note__
+
+> __Test__
 > This is a note.
 
  <span style="color: green"> Some green text </span>
