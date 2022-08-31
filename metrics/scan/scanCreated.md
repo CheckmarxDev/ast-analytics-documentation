@@ -17,14 +17,14 @@
 
 - source       
 - origin        
-- * engines       `multi values`
+- engines       `multi values`
 - projectId    
 - projectName   
 - tenantId     
 - scanId        
 - source        
 - domain        core / integrations
-- * tags         `multi values`
+- tags         `multi values`
 
 
 
