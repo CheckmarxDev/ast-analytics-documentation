@@ -1,10 +1,10 @@
 ## Scan Created
+> This metric counts the scans created in AST
 
 | Entity        | Action |
 | ------------- | ------------- |
 | Scan          | Scan_Created  |
 
-> This metric counts the scans created in AST
 
 - Type: [Counter]
 - Name: astScansCreated_events_total
@@ -18,14 +18,14 @@
 
 ```json
 {
-source="",
-origin="",
-*engines="",
-environment="",
-projectId="",
-projectName="",
-tenantId="",
-scanId=""
+"source"="",
+"origin"="",
+"*engines"="",
+"environment"="",
+"projectId""="",
+"projectName"="",
+"tenantId"="",
+"scanId"=""
 } 
 ```
 
