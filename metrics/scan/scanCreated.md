@@ -13,7 +13,7 @@
 
 ## Tags
 
-| Tag           | values  |
+| Tag           | Value  |
 | ------------- | ------------- |
 | source        | single  |
 | origin        | single  |
