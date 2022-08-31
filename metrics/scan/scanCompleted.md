@@ -1,4 +1,4 @@
-## Scan Created
+## Scan Completed
 > This metric counts the scans completed in AST
 
 - Type: *Counter*
