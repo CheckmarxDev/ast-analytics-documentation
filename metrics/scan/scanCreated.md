@@ -1,3 +1,11 @@
+<style>
+.green {
+    color: green;
+    font-weight:700;
+    font-size: 30px;
+}
+</style>
+
 ## Scan Created
 > This metric counts the scans created in AST
 
