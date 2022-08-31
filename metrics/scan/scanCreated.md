@@ -9,22 +9,22 @@
 - Type: *Counter*
 - Name: astScansCreated_events_total
 
-
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
 
 ## Tags
 
-| Tag           | Value  |
-| ------------- | ------------- |
-| source        | single  |
-| origin        | single  |
-| * engines     | multi values  |
-| projectId     | single  |
-| projectName   | single  |
-| tenantId      | single  |
-| scanId        | single  |
-| source        | single  |
-| domain        | single [core/integrations]  |
-| * tags        | multi values  |
+ 
+
+- source       
+- origin        
+- * engines       `multi values`
+- projectId    
+- projectName   
+- tenantId     
+- scanId        
+- source        
+- domain        core / integrations
+- * tags         `multi values`
 
 
 
