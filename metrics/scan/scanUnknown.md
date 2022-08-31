@@ -1,13 +1,13 @@
 ## Scan Unknown
-> This metric counts the scans failed in AST
+> This metric counts the scans unknown in AST
 
 - Type: *Counter*
-- Name: scansFailed_events_total
+- Name: scansUnknown_events_total
 
 ## Event
 | Entity        | Action |
 | ------------- | ------------- |
-| Scan          | Scan_Failed  |
+| Scan          | Scan_Unknown  |
 
 ## Tags
 
@@ -42,11 +42,11 @@ Example:
 ```
 
 ## Views 
-- Scans Created  By Origin 
-- Scans Created  By Source
+- Scans Unknown  By Origin 
+- Scans Unknown  By Source
 - Scans Created  By Scanners
-- Scans Created  By Scanner groups
-- Total Scans Created
+- Scans Unknown  By Scanner groups
+- Total Scans Unknown
 
 
  
