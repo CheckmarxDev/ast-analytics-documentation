@@ -12,11 +12,7 @@
 
 ## Tags
 ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+- source # text in gray
 ```
 - source        *from grpc ast-core-scan/getScanDetails*
 - origin        *from grpc ast-core-scan/getScanDetails*
