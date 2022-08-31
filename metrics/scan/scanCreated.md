@@ -1,11 +1,3 @@
-<style>
-.green {
-    color: green;
-    font-weight:700;
-    font-size: 30px;
-}
-</style>
-
 ## Scan Created
 > This metric counts the scans created in AST
 
@@ -13,27 +5,13 @@
 | ------------- | ------------- |
 | Scan          | Scan_Created  |
 
-// resets
-s { text-decoration:none; } //strike-through
-em { font-style: normal; font-weight: bold; } //italic emphasis
-
-
-// colors
-s { color: green }
-em { color: blue }
-
-
-~~This is green~~
-_this is blue_
-
 - Type: *Counter*
 - Name: astScansCreated_events_total
 
-<span style="color:red">some **This is Red Bold.** text</span>
+
 ## Tags
 
-> __Source__
-> This is a note.
+> __Source__  This is a note.
 
  <span style="color: green"> Some green text </span>
 - source        *from grpc ast-core-scan/getScanDetails*
