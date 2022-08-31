@@ -14,7 +14,11 @@
 Source: >test
 > __Note__
 > This is a note.
-> 
+```diff
+tet + this text is highlighted in green
+- this text is highlighted in red
+```
+ 
 - source        *from grpc ast-core-scan/getScanDetails*
 - origin        *from grpc ast-core-scan/getScanDetails*
 - scanners      `multi values` *from grpc ast-core-scan/getScanDetails*
