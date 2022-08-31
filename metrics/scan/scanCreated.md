@@ -1,13 +1,13 @@
 ## Scan Created
 > This metric counts the scans created in AST
 
-| Entity        | Action |
-| ------------- | ------------- |
-| Scan          | Scan_Created  |
-
 - Type: *Counter*
 - Name: astScansCreated_events_total
 
+## Event
+| Entity        | Action |
+| ------------- | ------------- |
+| Scan          | Scan_Created  |
 
 ## Tags
 
