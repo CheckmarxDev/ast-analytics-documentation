@@ -9,10 +9,11 @@
 - Type: *Counter*
 - Name: astScansCreated_events_total
 
-
+<span style="color:red">some **This is Red Bold.** text</span>
 ## Tags
 
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
+> __Source__
+> This is a note.
 
  <span style="color: green"> Some green text </span>
 - source        *from grpc ast-core-scan/getScanDetails*
