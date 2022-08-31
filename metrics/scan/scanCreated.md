@@ -11,8 +11,8 @@
 
 
 ## Tags
-```diff
-- source # text in gray
+Source: ```diff
+# text in gray
 ```
 - source        *from grpc ast-core-scan/getScanDetails*
 - origin        *from grpc ast-core-scan/getScanDetails*
