@@ -14,7 +14,8 @@
 <!-- ABOUT THE PROJECT -->
 ## Metrics
 
- <a href="https://github.com/CheckmarxDev/ast-metrics/issues">Request Feature</a>
+
+ <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/metrics/scanCreated.md">Scan Created</a>
  
 <!-- GETTING STARTED -->
 ## Creating new Metrics
