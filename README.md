@@ -12,10 +12,9 @@
 </div> 
 
 <!-- ABOUT THE PROJECT -->
-## Metrics
+## Scan Metrics
 
-
- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/metrics/scanCreated.md">Scan Created</a>
+ <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/metrics/scanCreated.md" target="_blank">Scan Created</a>
  
 <!-- GETTING STARTED -->
 ## Creating new Metrics
