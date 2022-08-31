@@ -14,7 +14,7 @@
 
 - source       
 - origin        
-- engines       `multi values`
+- scanners       `multi values`
 - projectId    
 - projectName   
 - tenantId     
@@ -31,7 +31,7 @@ Example:
 {
 "source":"github",
 "origin":"project scan",
-"engines":"sast,kics",
+"scanners":"sast,kics",
 "environment":"master",
 "projectId":"c2cdf5e7-b450-4f28-ac28-74567372e4a7",
 "projectName":"My Project",
@@ -45,8 +45,8 @@ Example:
 ## Views 
 - Scans Created  By Origin 
 - Scans Created  By Source
-- Scans Created  By Engine
-- Scans Created  By EngineGroup
+- Scans Created  By Scanners
+- Scans Created  By Scanner groups
 - Total Scans
 
 
