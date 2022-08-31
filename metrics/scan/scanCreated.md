@@ -13,14 +13,14 @@
 
 - `source`:        *from grpc ast-core-scan/getScanDetails*
 - `origin`:        *from grpc ast-core-scan/getScanDetails*
-- scanners:      `multi values` *from grpc ast-core-scan/getScanDetails*
-- projectId:     *from event*
-- projectName:   *from grpc ast-core-scan/getScanDetails*
-- tenantId:      *from event*
-- scanId:        *from event* 
-- source:        *from grpc ast-core-scan/getScanDetails*
-- domain:        core / integrations
-- tags:         `multi values`   *from grpc ast-core-scan/getScanDetails*
+- `scanners`:      `multi values` *from grpc ast-core-scan/getScanDetails*
+- `projectId`:     *from event*
+- `projectName`:   *from grpc ast-core-scan/getScanDetails*
+- `tenantId`:      *from event*
+- `scanId`:        *from event* 
+- `source:`        *from grpc ast-core-scan/getScanDetails*
+- `domain`:        core / integrations
+- `tags`:         `multi values`   *from grpc ast-core-scan/getScanDetails*
 
 
 
