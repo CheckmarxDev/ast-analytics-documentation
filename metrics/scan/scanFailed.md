@@ -19,6 +19,8 @@
 - `tenantId`:      *from event*
 - `scanId`:        *from event* 
 - `source:`        *from grpc ast-core-scan/getScanDetails*
+- `reason:`        *from grpc ast-core-scan/getScanDetails*
+- `errorCode:`     *from grpc ast-core-scan/getScanDetails*
 - `domain`:        core / integrations
 - `tags`:         `multi values`   *from grpc ast-core-scan/getScanDetails*
 
@@ -37,16 +39,19 @@ Example:
 "tenantId":"389c6d78-e97b-4a30-b2f7-da39daf721a4",
 "scanId":"7c5b7356-6837-43e9-827b-2e31d6571f6e",
 "domain":"core",
+"reason":"Configuration error",
+"errorCode":"00001"
 "tags":"tag1,tag2"
 } 
 ```
 
 ## Views 
-- Scans Created  By Origin 
-- Scans Created  By Source
-- Scans Created  By Scanners
-- Scans Created  By Scanner groups
-- Total Scans Created
+- Scans Failed  By Origin 
+- Scans Failed  By Source
+- Scans Failed  By Scanners
+- Scans Failed  By Scanner groups
+- Scans Failed By Reason
+- Total Scans Failed
 
 
  
