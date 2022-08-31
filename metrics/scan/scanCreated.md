@@ -10,6 +10,9 @@ This metric counts the scans created in AST
 
 
 ## Tags
+
+
+```json
 {
 source="",
 origin="",
@@ -20,13 +23,15 @@ projectName="",
 tenantId="",
 scanId=""
 } 
+```
+
 
 ## Views 
-Scans Created  By Origin
-Scans Created  By Source
-Scans Created  By Engine
-Scans Created  By EngineGroup
-Total Scans
+- Scans Created  By Origin
+- Scans Created  By Source
+- Scans Created  By Engine
+- Scans Created  By EngineGroup
+- Total Scans
 
 
  
