@@ -1,5 +1,5 @@
 ## Scan Canceled
-> This metric counts the scans failed in AST
+> This metric counts the scans canceled in AST
 
 - Type: *Counter*
 - Name: scansCanceled_events_total
@@ -7,7 +7,7 @@
 ## Event
 | Entity        | Action |
 | ------------- | ------------- |
-| Scan          | Scan_Failed  |
+| Scan          | Scan_Canceled  |
 
 ## Tags
 
@@ -42,11 +42,11 @@ Example:
 ```
 
 ## Views 
-- Scans Created  By Origin 
-- Scans Created  By Source
-- Scans Created  By Scanners
-- Scans Created  By Scanner groups
-- Total Scans Created
+- Scans Canceled  By Origin 
+- Scans Canceled  By Source
+- Scans Canceled  By Scanners
+- Scans Canceled  By Scanner groups
+- Total Scans Canceled
 
 
  
