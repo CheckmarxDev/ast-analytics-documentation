@@ -11,10 +11,8 @@
 
 
 ## Tags
-Source: 
-```diff
-# text in gray
-```
+#Source:#
+
 - source        *from grpc ast-core-scan/getScanDetails*
 - origin        *from grpc ast-core-scan/getScanDetails*
 - scanners      `multi values` *from grpc ast-core-scan/getScanDetails*
