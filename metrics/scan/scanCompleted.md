@@ -2,7 +2,7 @@
 > This metric counts the scans completed in AST
 
 - Type: *Counter*
-- Name: astScansCompleted_events_total
+- Name: scansCompleted_events_total
 
 ## Event
 | Entity        | Action |
