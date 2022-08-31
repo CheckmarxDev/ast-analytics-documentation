@@ -11,8 +11,8 @@
 
 ## Tags
 
-> __source__  *from grpc ast-core-scan/getScanDetails*
-> __origin__  *from grpc ast-core-scan/getScanDetails*
+- > __source__  *from grpc ast-core-scan/getScanDetails*
+- > __origin__  *from grpc ast-core-scan/getScanDetails*
         
 - origin        *from grpc ast-core-scan/getScanDetails*
 - scanners      `multi values` *from grpc ast-core-scan/getScanDetails*
