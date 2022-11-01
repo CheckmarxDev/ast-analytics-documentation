@@ -1,9 +1,9 @@
-## New Vulnerabilities
+## New Vulnerability
 > This metric counts new vulnerabilities found in AST
 > The metric only count new vulnerabilities found
 
 - Type: *Counter*
-- Name: newVulnerabilities_events_total
+- Name: newVulnerability_events_total
 
 ## Event
 | Entity        | Action |
