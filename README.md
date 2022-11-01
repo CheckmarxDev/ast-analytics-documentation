@@ -26,12 +26,12 @@
 
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Concurrent Scans`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/vulnerabilities.md" target="_blank">`New Vulnerabilities`</a>
--  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedVulnearabilitiesByLanguages.md" target="_blank">`ScannedVulnerabilitiesByLanguage`</a>
--  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedVulnearabilitiesByState.md" target="_blank">`ScannedVulnerabilitiesByState`</a>
--  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedLanguages.md" target="_blank">`scannedLanguage`</a>
--  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedPlatform.md" target="_blank">`scannedPlatform`</a>
+-  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedVulnearabilitiesByLanguages.md" target="_blank">`Scanned Vulnerabilities By Language`</a>
+-  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedVulnearabilitiesByState.md" target="_blank">`Scanned Vulnerabilities By State`</a>
+-  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedLanguages.md" target="_blank">`scanned Language`</a>
+-  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedPlatform.md" target="_blank">`scannedP latform`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Full/Incremental`</a>
--  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`ScanDuration`</a>
+-  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Scan Duration`</a>
  
 ## Project Event Metrics
 
