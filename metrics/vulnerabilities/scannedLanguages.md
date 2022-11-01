@@ -1,8 +1,8 @@
-## Scanned Languages
+## Scanned Language
 > This metric counts languages scanned by each scan
 
 - Type: *Counter*
-- Name: scannedLanguages_events_total
+- Name: scannedLanguage_events_total
 
 ## Event
 | Entity        | Action |
