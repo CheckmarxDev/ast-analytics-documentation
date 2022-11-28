@@ -1,5 +1,7 @@
+
 ## Scan Created
 > This metric counts the scans created in AST
+> Each performed scan will increase the count +1.
 
 - Type: *Counter*
 - Name: scansCreated_events_total
@@ -7,7 +9,9 @@
 ## Event
 | Entity        | Action |
 | ------------- | ------------- |
-| Scan          | Scan_Created  |
+| Scan          | Scan_Created |
+
+
 
 ## Tags
 
@@ -17,10 +21,8 @@
 - `projectId`:     *from event*
 - `projectName`:   *from grpc ast-core-scan/getScanDetails*
 - `tenantId`:      *from event*
-- `scanId`:        *from event* 
 - `source:`        *from grpc ast-core-scan/getScanDetails*
 - `domain`:        core / integrations
-- `tags`:         `multi values`   *from grpc ast-core-scan/getScanDetails*
 
 
 
@@ -31,21 +33,93 @@ Example:
 "source":"github",
 "origin":"project scan",
 "scanners":"sast,kics",
-"environment":"master",
 "projectId":"c2cdf5e7-b450-4f28-ac28-74567372e4a7",
 "projectName":"My Project",
 "tenantId":"389c6d78-e97b-4a30-b2f7-da39daf721a4",
-"scanId":"7c5b7356-6837-43e9-827b-2e31d6571f6e",
 "domain":"core",
-"tags":"tag1,tag2"
 } 
 ```
+# Output
+```
+- scanCreated_events_total{domain="Core",origin="webapp",projectId="114e1d32-e9ac-4c70-b6cf-7aea50e60fb0",projectName="From Url",scanners="sast,sca,kics",source="github",tenantId="abe9f0e1-7882-4a81-9b09-fd01be27282a",} 1.0
+```
+## Split Tags 
+- tenantId (in case multitenant)
+- source
+- origin
+- projectId
+- scanners
+
+## Filters
+- tenantId (in case multitenant)
+- source
+- origin
+- projectId
+- scanners
 
 ## Views 
+### Scanner Activation total 
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+   "queryFunction":2,
+  "format": "pie",
+  "showHistorical": "default",
+  "splitTag":["scanners"],
+  "splitCombination":true
+}
+```
+- `PromQuery`: 
+- sum by (value,scanners)(last_over_time(concurrentScans[$__range]))
+- `Type`: rangeQuery
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-activation-total.png" alt="Logo" width="300" >
+
+### Scanner Activation overtime 
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+  "format": "series",
+  "queryFunction":3,
+  "period":1d,
+  "showHistorical": "cleanHistorical",
+  "fullFillGaps": true,
+  "splitTag":["scanners"],
+  "splitCombination":true
+}
+```
+- `PromQuery`: 
+- increase(sum by (value,scanners)(last_over_time(concurrentScans[$__range]))[$period:])
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-activation-overtime.png" alt="Logo" width="800" >
+
+
+### Total Scanned Project overtime
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+  "queryFunction":1,
+  "format": "series",
+  "showHistorical": "cleanHistorical",
+  "fullFillGaps": true
+}
+```
+- `PromQuery`: count(count(last_over_time(scanCreated_events_total {tenantId=~'abe9f0e1-7882-4a81-9b09-fd01be27282a', service=~'.*metrics-management*.'} [100y])) by(projectId)) OR on() vector(0)
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scanned-project-overtime.png" alt="Logo" width="800" >
+
+
+
+
+
+
+
+## Other Views 
 - Scans Created  By Origin 
 - Scans Created  By Source
 - Scans Created  By Scanners
 - Scans Created  By Scanner groups
 - Total Scans Created
-- Total Scanne Project
-count(count(last_over_time(scanCreated_events_total {tenantId=~'abe9f0e1-7882-4a81-9b09-fd01be27282a', service=~'.*metrics-management*.'} [100y])) by(projectId)) OR on() vector(0)
+
