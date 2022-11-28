@@ -58,7 +58,7 @@ Example:
   "showHistorical": "default"
 }
 ```
- <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-total.png" alt="Logo" width="80" height="80">
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-total.png" alt="Logo" width="400" >
 ### lines of code periodic timeline 
 ```json
 {
@@ -70,4 +70,4 @@ Example:
   "fullFillGaps": true,
 }
 ```
- <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-overtime.png" alt="Logo" width="80" height="80">
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-overtime.png" alt="Logo" width="400" >
