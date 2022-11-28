@@ -70,4 +70,4 @@ Example:
   "fullFillGaps": true,
 }
 ```
- <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-overtime.png" alt="Logo" width="400" >
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-overtime.png" alt="Logo" width="800" >
