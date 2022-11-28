@@ -56,7 +56,8 @@ Example:
   "step": "30d",
   "definedRange": "1y",
   "queryFunction": 2,
-  "format": "point",
+  "format": "pie",
+  "splitTag":["severity"]
   "showHistorical": "default"
 }
 ```
