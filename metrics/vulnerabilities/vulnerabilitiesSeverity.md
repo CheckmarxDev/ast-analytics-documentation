@@ -61,7 +61,7 @@ Example:
   "showHistorical": "default"
 }
 ```
-- `PromQuery`: sum(last_over_time(vulnerabilitiesSeverity[$__range]))
+- `PromQuery`: sum by (values,severity)(last_over_time(vulnerabilitiesSeverity[$__range]))
 - `Type`: instantQuery
  <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/vulnerability-severity-total.png" alt="Logo" width="300" >
 
@@ -77,6 +77,6 @@ Example:
   "fullFillGaps": true,
 }
 ```
-- `PromQuery`: sum(vulnerabilitiesSeverity)
+- `PromQuery`: sum by (values,severity)(vulnerabilitiesSeverity)
 - `Type`: rangeQuery
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/vulnerability-severity-overtime.png" alt="Logo" width="800" >
