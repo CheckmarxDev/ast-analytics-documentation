@@ -32,8 +32,9 @@ Example:
 } 
 ```
 # Output
+```
 - linesOfCode_events_total{origin="webapp",projectId="4d19570b-e395-4043-a71f-e959915f34c8",scanners="sast",source="github",tenantId="abe9f0e1-7882-4a81-9b09-fd01be27282a",} 1065.0
-
+```
 ## Split Tags 
 - scanners (*splitCombination)
 - projectId
@@ -59,8 +60,8 @@ Example:
   "showHistorical": "default"
 }
 ```
- - PromQuery: sum(last_over_time(linesOfCode[$__range]))
- - Type: instantQuery
+- `PromQuery`: sum(last_over_time(linesOfCode[$__range]))
+- `Type`: instantQuery
  <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-total.png" alt="Logo" width="400" >
 
 ### lines of code periodic timeline 
@@ -74,6 +75,6 @@ Example:
   "fullFillGaps": true,
 }
 ```
-- PromQuery: sum(linesOfCode)
-- - Type: rangeQuery
+- `PromQuery`: sum(linesOfCode)
+- `Type`: rangeQuery
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-overtime.png" alt="Logo" width="800" >
