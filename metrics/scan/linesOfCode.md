@@ -62,7 +62,7 @@ Example:
 ```
 - `PromQuery`: sum(last_over_time(linesOfCode[$__range]))
 - `Type`: instantQuery
- <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-total.png" alt="Logo" width="400" >
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-total.png" alt="Logo" width="300" >
 
 ### lines of code periodic timeline 
 ```json
