@@ -71,7 +71,7 @@ Example:
 }
 ```
 - `PromQuery`: 
-- sum by (value,scanners)(last_over_time(concurrentScans[$__range]))
+- sum by (value,scanners)(last_over_time(scanCreated_events_total[$__range]))
 - `Type`: rangeQuery
  <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-activation-total.png" alt="Logo" width="300" >
 
@@ -90,12 +90,29 @@ Example:
 }
 ```
 - `PromQuery`: 
-- increase(sum by (value,scanners)(last_over_time(concurrentScans[$__range]))[$period:])
+- increase(sum by (value,scanners)(last_over_time(scanCreated_events_total[$__range]))[$period:])
 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-activation-overtime.png" alt="Logo" width="800" >
 
+### Scanned Project total 
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+  "queryFunction":1,
+  "format": "point",
+  "showHistorical": "default",
+  "splitTag":["scanners"],
+  "splitCombination":true
+}
+```
+- `PromQuery`: 
+- sum by (value,scanners)(last_over_time(scanCreated_events_total[$__range]))
+- `Type`: rangeQuery
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scanned-project-total.png" alt="Logo" width="300" >
 
-### Total Scanned Project overtime
+
+### Scanned Project overtime
 ```json
 {
   "step": "30d",
