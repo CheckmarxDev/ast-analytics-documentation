@@ -1,5 +1,6 @@
 ## Sast Lines Of Code
 > This metric counts the scanned lines of code from sast.
+> Each performed scan will store the ammount of scanned lines on the gauge dataPoint.
 
 - Type: *Gauge*
 - Name: linesOfCode
@@ -58,7 +59,8 @@ Example:
   "showHistorical": "default"
 }
 ```
- 
+ - PromQuery: sum(last_over_time(linesOfCode[$__range]))
+ - Type: instantQuery
  <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-total.png" alt="Logo" width="400" >
 
 ### lines of code periodic timeline 
@@ -72,5 +74,6 @@ Example:
   "fullFillGaps": true,
 }
 ```
-
+- PromQuery: sum(linesOfCode)
+- - Type: rangeQuery
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-overtime.png" alt="Logo" width="800" >
