@@ -54,7 +54,7 @@ Example:
   "step": "30d",
   "definedRange": "1y",
   "queryFunction": 2,
-  "format": "trend",
+  "format": "point",
   "showHistorical": "default"
 }
 ```
