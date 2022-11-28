@@ -58,7 +58,7 @@ Example:
 - scanners
 
 ## Views 
-### Scanner Activation total 🟢_check_mark:
+### Scanner Activation total 🟢:OK
 ```json
 {
   "step": "30d",
