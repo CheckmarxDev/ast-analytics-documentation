@@ -57,7 +57,7 @@ Example:
   "definedRange": "1y",
   "queryFunction": 2,
   "format": "pie",
-  "splitTag":["severity"]
+  "splitTag":["severity"],
   "showHistorical": "default"
 }
 ```
@@ -72,6 +72,7 @@ Example:
   "definedRange": "1y",
   "queryFunction": 5,
   "format": "series",
+  "splitTag":["severity"],
   "showHistorical": "default",
   "fullFillGaps": true,
 }
