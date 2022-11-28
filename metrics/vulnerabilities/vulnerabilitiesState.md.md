@@ -1,8 +1,9 @@
-## Scanned Language
-> This metric counts languages scanned by each scan
+## Vulnerabilities By State
+> This metric counts the vulnerabilities by state.
+> Each performed scan will store the ammount of scanned lines on the gauge dataPoint.
 
-- Type: *Counter*
-- Name: scannedLanguage_events_total
+- Type: *Gauge*
+- Name: vulnerabilitiesState
 
 ## Event
 | Entity        | Action |
@@ -11,31 +12,71 @@
 
 ## Tags
 
-- `scanner`:       *from grpc ast-core-scan/getScanDetails*
+- `source`:        *from grpc ast-core-scan/getScanDetails*
+- `language`:        *from grpc ast-data-abalytics-api/getVulnerability*
+- `scanner`:      `multi values` *from grpc ast-core-scan/getScanDetails*
 - `projectId`:     *from event*
-- `projectName`:   *from grpc ast-core-scan/getScanDetails*
 - `tenantId`:      *from event*
-- `scanId`:        *from event* 
-- `language:`       *from grpc ast-core-results/getResults*
+- `state:`        *from grpc ast-data-abalytics-api/getVulnerabilityByState*
 
 
 Example:
 
 ```json
 {
+"language":"java",
+"state":"TO_VERIFY",
 "scanner":"sast",
 "projectId":"c2cdf5e7-b450-4f28-ac28-74567372e4a7",
-"projectName":"My Project",
 "tenantId":"389c6d78-e97b-4a30-b2f7-da39daf721a4",
-"scanId":"7c5b7356-6837-43e9-827b-2e31d6571f6e",
-"language":"javascript"
 } 
 ```
+# Output
+```
+- vulnerabilitiesState{tenantId="abe9f0e1-7882-4a81-9b09-fd01be27282a",projectId="f495a9ae-fae4-44b5-906c-d7ebc588b352",scanner="sast",state="TO_VERIFY",language="VB6",} 6.0
+```
+## Split Tags 
+- scanner 
+- projectId
+- language
+- state
+- tenantId (in case multitenant)
+
+## Filters
+- scanner 
+- projectId
+- language
+- state
+- tenantId (in case multitenant)
 
 ## Views 
-- Scanned Languages By Scanner 
-- Scanned Languages By Project 
-- Total Scanned Languages Found
+### Vulnerability by Severity total 
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+  "queryFunction": 2,
+  "format": "pie",
+  "splitTag":["state"],
+  "showHistorical": "default"
+}
+```
+- `PromQuery`: sum by (values,state)(last_over_time(vulnerabilitiesState[$__range]))
+- `Type`: instantQuery
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/vulnerability-state-total.png" alt="Logo" width="300" >
 
-
- 
+### lines of code periodic timeline 
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+  "queryFunction": 5,
+  "format": "series",
+  "splitTag":["state"],
+  "showHistorical": "default",
+  "fullFillGaps": true,
+}
+```
+- `PromQuery`: sum by (values,state)(vulnerabilitiesState)
+- `Type`: rangeQuery
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/vulnerability-state-overtime.png" alt="Logo" width="800" >
