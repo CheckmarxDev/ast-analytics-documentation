@@ -9,7 +9,7 @@
 ## Event
 | Entity        | Action |
 | ------------- | ------------- |
-| Scan          | Scan_Completed  |
+| Scan          | Scan_Created |
 
 ## Tags
 
@@ -27,7 +27,7 @@ Example:
 ```
 # Output
 ```
-- vulnerabilitiesSeverity{tenantId="abe9f0e1-7882-4a81-9b09-fd01be27282a",projectId="f495a9ae-fae4-44b5-906c-d7ebc588b352",scanner="sast",severity="HIGH",language="VB6",} 2.0
+- concurrentScans{tenantId="abe9f0e1-7882-4a81-9b09-fd01be27282a",} 2.0
 ```
 ## Split Tags 
 - tenantId (in case multitenant)
@@ -49,7 +49,7 @@ Example:
 ```
 - `PromQuery`: sum by (values,severity)(last_over_time(concurrentScans[$__range]))
 - `Type`: instantQuery
- <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/concirrent-scans-total.png" alt="Logo" width="300" >
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/concurrent-scans-total.png" alt="Logo" width="300" >
 
 ### concurrent Scans periodic timeline 
 ```json
