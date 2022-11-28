@@ -127,6 +127,39 @@ Example:
 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scanned-project-overtime.png" alt="Logo" width="800" >
 
+### Scans by scanner group total 
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+  "queryFunction":1,
+  "format": "point",
+  "showHistorical": "default",
+  "splitTag":["scanners"],
+  "splitCombination":true
+}
+```
+- `PromQuery`: 
+- sum by (value,scanners)(last_over_time(scanCreated_events_total[$__range]))
+- `Type`: rangeQuery
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-scanner-group-total.png" alt="Logo" width="300" >
+
+
+### Scan by scanner group overtime
+```json
+{
+  "step": "30d",
+  "definedRange": "1y",
+  "queryFunction":1,
+  "format": "series",
+  "showHistorical": "cleanHistorical",
+  "fullFillGaps": true
+}
+```
+- `PromQuery`: count(count(last_over_time(scanCreated_events_total {tenantId=~'abe9f0e1-7882-4a81-9b09-fd01be27282a', service=~'.*metrics-management*.'} [100y])) by(projectId)) OR on() vector(0)
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-scanner-group-overtime.png" alt="Logo" width="800" >
+
 
 
 
@@ -136,7 +169,5 @@ Example:
 ## Other Views 
 - Scans Created  By Origin 
 - Scans Created  By Source
-- Scans Created  By Scanners
-- Scans Created  By Scanner groups
 - Total Scans Created
 
