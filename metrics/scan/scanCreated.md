@@ -67,11 +67,11 @@ Example:
   "format": "pie",
   "showHistorical": "default",
   "splitTag":["scanners"],
-  "splitCombination":true
+  "splitCombinations":true
 }
 ```
 - `PromQuery`: 
-- sum by (value,scanners)(last_over_time(scanCreated_events_total[$__range]))
+- sum by (value ,scanners)(last_over_time(scanCreated_events_total{tenantId=~'abe9f0e1-7882-4a81-9b09-fd01be27282a', service=~'.*metrics-management*.'}[365d]))
 - `Type`: rangeQuery
  <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-activation-total.png" alt="Logo" width="300" >
 
@@ -80,13 +80,13 @@ Example:
 {
   "step": "30d",
   "definedRange": "1y",
-  "format": "series",
   "queryFunction":3,
-  "period":1d,
-  "showHistorical": "cleanHistorical",
-  "fullFillGaps": true,
+  "format": "series",
+  "showHistorical": "default",
   "splitTag":["scanners"],
-  "splitCombination":true
+  "period":"30d",
+  "splitCombinations":true,
+  "fullFillGaps": true
 }
 ```
 - `PromQuery`: 
