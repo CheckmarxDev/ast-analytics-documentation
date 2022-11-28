@@ -41,13 +41,14 @@ Example:
 {
   "step": "30d",
   "definedRange": "1y",
-  "queryFunction": 2,
-  "format": "pie",
-  "splitTag":["severity"],
+  "format": "trend",
   "showHistorical": "default"
 }
 ```
-- `PromQuery`: sum by (values,severity)(last_over_time(concurrentScans[$__range]))
+- `PromQuery`: 
+- min by (value)(last_over_time(concurrentScans[1h]))
+- avg by (value)(last_over_time(concurrentScans[1h]))
+- max by (value)(last_over_time(concurrentScans[1h]))
 - `Type`: instantQuery
  <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/concurrent-scans-total.png" alt="Logo" width="300" >
 
@@ -56,13 +57,14 @@ Example:
 {
   "step": "30d",
   "definedRange": "1y",
-  "queryFunction": 5,
   "format": "series",
-  "splitTag":["severity"],
-  "showHistorical": "default",
+  "showHistorical": "cleanHistorica",
   "fullFillGaps": true,
 }
 ```
-- `PromQuery`: sum by (values,severity)(concurrentScans)
+- `PromQuery`: 
+- min by (value)(last_over_time(concurrentScans[1h]))
+- avg by (value)(last_over_time(concurrentScans[1h]))
+- max by (value)(last_over_time(concurrentScans[1h]))
 - `Type`: rangeQuery
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/concurrent-scans-overtime.png" alt="Logo" width="800" >
