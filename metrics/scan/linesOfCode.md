@@ -49,6 +49,7 @@ Example:
 
 ## Views 
 ### lines of code total 
+```json
 {
   "step": "30d",
   "definedRange": "1y",
@@ -56,8 +57,9 @@ Example:
   "format": "trend",
   "showHistorical": "default"
 }
-
+```
 ### lines of code periodic timeline 
+```json
 {
   "step": "30d",
   "definedRange": "1y",
@@ -66,3 +68,4 @@ Example:
   "showHistorical": "default",
   "fullFillGaps": true,
 }
+```
