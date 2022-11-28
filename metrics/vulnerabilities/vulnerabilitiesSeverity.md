@@ -3,7 +3,7 @@
 > Each performed scan will store the ammount of scanned lines on the gauge dataPoint.
 
 - Type: *Gauge*
-- Name: vulnerabilityBySeverity
+- Name: vulnerabilitiesSeverity
 
 ## Event
 | Entity        | Action |
@@ -13,44 +13,44 @@
 ## Tags
 
 - `source`:        *from grpc ast-core-scan/getScanDetails*
-- `origin`:        *from grpc ast-core-scan/getScanDetails*
-- `scanners`:      `multi values` *from grpc ast-core-scan/getScanDetails*
+- `language`:        *from grpc ast-data-abalytics-api/getVulnerability*
+- `scanner`:      `multi values` *from grpc ast-core-scan/getScanDetails*
 - `projectId`:     *from event*
 - `tenantId`:      *from event*
-- `source:`        *from grpc ast-core-scan/getScanDetails*
+- `severity:`        *from grpc ast-data-abalytics-api/getVulnerability*
 
 
 Example:
 
 ```json
 {
-"source":"github",
-"origin":"project scan",
-"scanners":"sast,kics",
+"language":"java",
+"severity":"HIGH",
+"scanner":"sast",
 "projectId":"c2cdf5e7-b450-4f28-ac28-74567372e4a7",
 "tenantId":"389c6d78-e97b-4a30-b2f7-da39daf721a4",
 } 
 ```
 # Output
 ```
-- linesOfCode_events_total{origin="webapp",projectId="4d19570b-e395-4043-a71f-e959915f34c8",scanners="sast",source="github",tenantId="abe9f0e1-7882-4a81-9b09-fd01be27282a",} 1065.0
+- vulnerabilitiesSeverity{tenantId="abe9f0e1-7882-4a81-9b09-fd01be27282a",projectId="f495a9ae-fae4-44b5-906c-d7ebc588b352",scanner="sast",severity="HIGH",language="VB6",} 2.0
 ```
 ## Split Tags 
-- scanners (*splitCombination)
+- scanner 
 - projectId
-- source
-- origin
+- language
+- severity
 - tenantId (in case multitenant)
 
 ## Filters
-- scanners 
+- scanner 
 - projectId
-- source
-- origin
+- language
+- severity
 - tenantId (in case multitenant)
 
 ## Views 
-### lines of code total 
+### Vulnerability by Severity total 
 ```json
 {
   "step": "30d",
@@ -60,9 +60,9 @@ Example:
   "showHistorical": "default"
 }
 ```
-- `PromQuery`: sum(last_over_time(linesOfCode[$__range]))
+- `PromQuery`: sum(last_over_time(vulnerabilitiesSeverity[$__range]))
 - `Type`: instantQuery
- <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-total.png" alt="Logo" width="300" >
+ <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/vulnerability-severity-total.png" alt="Logo" width="300" >
 
 ### lines of code periodic timeline 
 ```json
@@ -75,6 +75,6 @@ Example:
   "fullFillGaps": true,
 }
 ```
-- `PromQuery`: sum(linesOfCode)
+- `PromQuery`: sum(vulnerabilitiesSeverity)
 - `Type`: rangeQuery
-<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/loc-overtime.png" alt="Logo" width="800" >
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/vulnerability-severity-overtime.png" alt="Logo" width="800" >
