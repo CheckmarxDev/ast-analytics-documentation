@@ -94,16 +94,15 @@ Example:
 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/scan-activation-overtime.png" alt="Logo" width="800" >
 
-### Scanned Project total 
+### Scanned Project total 🟢:OK
 ```json
 {
   "step": "30d",
   "definedRange": "1y",
   "queryFunction":1,
-  "format": "point",
-  "showHistorical": "default",
-  "splitTag":["scanners"],
-  "splitCombination":true
+  "format": "pie",
+  "showHistorical": "default"
+  
 }
 ```
 - `PromQuery`: 
