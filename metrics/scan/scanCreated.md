@@ -118,7 +118,8 @@ Example:
   "definedRange": "1y",
   "queryFunction":1, 
   "format": "series",
-  "showHistorical": "default"
+  "showHistorical": "default",
+  "fullFillGaps": true
 }
 ```
 - `PromQuery`: count(count(last_over_time(scanCreated_events_total {tenantId=~'abe9f0e1-7882-4a81-9b09-fd01be27282a', service=~'.*metrics-management*.'} [100y])) by(projectId)) OR on() vector(0)
