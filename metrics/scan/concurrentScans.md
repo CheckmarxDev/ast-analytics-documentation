@@ -39,10 +39,11 @@ Example:
 ### concurrentScans by total 
 ```json
 {
-  "step": "30d",
-  "definedRange": "1y",
+  "step": "1h",
+  "definedRange": "30d",
   "format": "trend",
-  "showHistorical": "default"
+  "showHistorical": "default",
+  "fullFillGaps":true
 }
 ```
 - `PromQuery`: 
@@ -55,11 +56,11 @@ Example:
 ### concurrent Scans periodic timeline 
 ```json
 {
-  "step": "30d",
-  "definedRange": "1y",
+  "step": "1h",
+  "definedRange": "30d",
   "format": "series",
-  "showHistorical": "cleanHistorica",
-  "fullFillGaps": true,
+  "showHistorical": "default",
+  "fullFillGaps":true
 }
 ```
 - `PromQuery`: 
