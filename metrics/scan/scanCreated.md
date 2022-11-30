@@ -97,12 +97,11 @@ Example:
 ### Scanned Project total 🟢:OK
 ```json
 {
-  "step": "30d",
+  "step": "1d",
   "definedRange": "1y",
-  "queryFunction":1,
+  "queryFunction":1, 
   "format": "pie",
   "showHistorical": "default"
-  
 }
 ```
 - `PromQuery`: 
@@ -113,13 +112,13 @@ Example:
 
 ### Scanned Project overtime
 ```json
+
 {
-  "step": "30d",
+  "step": "1d",
   "definedRange": "1y",
-  "queryFunction":1,
+  "queryFunction":1, 
   "format": "series",
-  "showHistorical": "cleanHistorical",
-  "fullFillGaps": true
+  "showHistorical": "default"
 }
 ```
 - `PromQuery`: count(count(last_over_time(scanCreated_events_total {tenantId=~'abe9f0e1-7882-4a81-9b09-fd01be27282a', service=~'.*metrics-management*.'} [100y])) by(projectId)) OR on() vector(0)
