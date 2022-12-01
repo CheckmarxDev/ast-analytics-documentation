@@ -24,7 +24,7 @@
 
 
 
--  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/concurrentScan.md" target="_blank">`Concurrent Scans`</a>
+-  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/concurrentScans.md" target="_blank">`Concurrent Scans`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/vulnerabilities.md" target="_blank">` Vulnerability`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/fixedVulnerabilities.md" target="_blank">`Fixed Vulnerability`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/vulnerabilitiesSeverity.md" target="_blank">`Scanned Vulnerabilities By Severity`</a>
