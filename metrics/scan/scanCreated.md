@@ -131,7 +131,7 @@ Example:
 {
   "step": "30d",
   "definedRange": "1y",
-  "queryFunction":1,
+  "queryFunction":2,
   "format": "point",
   "showHistorical": "default",
   "splitTag":["scanners"],
@@ -149,7 +149,7 @@ Example:
 {
   "step": "30d",
   "definedRange": "1y",
-  "queryFunction":1,
+  "queryFunction":2,
   "format": "series",
   "showHistorical": "cleanHistorical",
   "fullFillGaps": true
