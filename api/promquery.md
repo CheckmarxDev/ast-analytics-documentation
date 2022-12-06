@@ -70,6 +70,8 @@ or
 - 
 ```
 Functions is mandatory
+When function is Periodic (3), the period is mandatory
+When function is not periodic period must be null
 ```
 
 
@@ -77,11 +79,11 @@ Functions is mandatory
 ### Examples:
 
 ```json
-"definedRange": "1w"
+"function": "1"
 ```
 or 
 
 ```json
-"start": "124332523423"
-"end":"124332432423"
+"function": "3"
+"period":"1d"
 ```
