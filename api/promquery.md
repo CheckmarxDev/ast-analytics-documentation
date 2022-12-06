@@ -8,10 +8,9 @@
 > On Gauge metrics, the step is equals to the *period* of the query.
 > The step must be smaller than the *range*
 ### Examples:
+```json
 definedRange: 1w
 step:1d
+```
 
-- Type: *Gauge*
-- Name: concurrentScans
 
-## Event
