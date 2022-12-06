@@ -59,9 +59,20 @@ or
 ## Function
 >The function is a enum that defiens what is the function applied to the metric.
 
+- 1 Open Query
+- 2 Accumulative
+- 3 Periodic
+- 4 Simple Sum
+- 5 Simple Count  
+- 6 Simple Periodic
+- 7 Max Overtime
+- 8 Min Overtime
+- 
 ```
 Functions is mandatory
 ```
+
+
 
 ### Examples:
 
