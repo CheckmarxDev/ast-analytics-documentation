@@ -6,8 +6,8 @@
 ## Step
 > The step is the resolution of the data, or the distance between datapoints in a given range. 
 > In Gauge metrics, the step is equals to the *period* of the query.
-> The step must be smaller than the *range*
-> In Counter metrics, the step can be equals or smaller than the *period* 
+> The step must be smaller than the *range*.
+> In Counter metrics, the step can be equals or smaller than the *period*.
 ### Examples:
 
 ```json
@@ -27,13 +27,14 @@
 
 
 ## Range
-> The range defines the start date and the end date of the query. 
-> The range can be defined using 2 diferent parameters configuration: (definedRange or start/end)
-> Using start/end the definedRange should be null
-> Using definedRange the start/end should be null
-> Defined Range is a enum to facilitate query (1w, 1d, 1h, 30m)
-> Start and End must be passed as numeric date format UTC 
-
+```
+The range defines the start date and the end date of the query. 
+The range can be defined using 2 diferent parameters configuration: (definedRange or start/end).
+Using start/end the definedRange should be null.
+Using definedRange the start/end should be null.
+Defined Range is a enum to facilitate query (1w, 1d, 1h, 30m).
+Start and End must be passed as numeric date format UTC.
+```
 ### Examples:
 
 ```json
