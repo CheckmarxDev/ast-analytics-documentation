@@ -24,3 +24,24 @@
 "definedRange": "1h"
 "step":"1m"
 ```
+
+
+## Range
+> The range defines the start date and the end date of the query. 
+> The range can be defined using 2 diferent parameters configuration: (definedRange or start/end)
+> Using start/end the definedRange should be null
+> Using definedRange the start/end should be null
+> Defined Range is a enum to facilitate query (1w, 1d, 1h, 30m)
+> Start and End must be passed as numeric date format UTC 
+
+### Examples:
+
+```json
+"definedRange": "1w"
+```
+or 
+
+```json
+"start": "124332523423"
+"end":"124332432423"
+```
