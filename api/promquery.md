@@ -1,8 +1,15 @@
 # Promquery
 
+-Step
+-Range
+
 ## Step
-> This metric counts the concurrent scans.
-> Each performed scan will check for scans that are running on the same moment.
+> The step is the resolution of the data, or the distance between datapoints in a given range. 
+> On Gauge metrics, the step is equals to the *period* of the query.
+> The step must be smaller than the *range*
+### Examples:
+definedRange: 1w
+step:1d
 
 - Type: *Gauge*
 - Name: concurrentScans
