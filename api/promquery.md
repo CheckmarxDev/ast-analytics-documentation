@@ -57,14 +57,14 @@ Start and End must be passed as numeric date format UTC.
 ### Examples:
 
 ```json
-"range":{"
+"range":{
   "definedRange": "1w"
 }
 ```
 or 
 
 ```json
-"range":{"
+"range":{
 "start": "124332523423"
 "end":"124332432423"
 }
@@ -110,6 +110,7 @@ or
 Values
 - historical
 - cleanHistorical
+
 ```
 Data History is mandatory
 ```
@@ -120,11 +121,40 @@ Data History is mandatory
 "dataHistory": "cleanHistorical"
 ```
 
+## aggregateByStep
+> used to aggregate data by the step parameter.
+>For example, if you have a step of 1 day, the data will be aggregated by a period of day
 
+### Examples:
+
+```json
+"aggregateByStep": "true"
+```
+
+```
+Step Aggregation is not mandatory
+```
+## Combination aggregateByStep vs dataHistory
+
+
+```json
+"aggregateByStep": "false",
+"dataHistory": "historical"
+``` 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/no_aggregation_historical.png" alt="Logo" width="300" >
-
+```json
+"aggregateByStep": "false",
+"dataHistory": "cleanHistorical"
+``` 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/no_aggregation_clean_historical.png" alt="Logo" width="300" >
-
+```json
+"aggregateByStep": "true",
+"dataHistory": "cleanHistorical"
+``` 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/step_aggregation_clean_historical.png" alt="Logo" width="300" >
-
+```json
+"aggregateByStep": "true",
+"dataHistory": "historical"
+``` 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/ste_aggregation_clean_historical.png" alt="Logo" width="300" >
+## groupBy
