@@ -13,7 +13,7 @@
 
 ## API
 
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md target="_blank">`Prometheus Query`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`Prometheus Query`</a>
 
   <!-- ABOUT THE PROJECT -->
 ## Scan Event Metrics
