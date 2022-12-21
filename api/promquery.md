@@ -1,9 +1,20 @@
-# Promquery
+# Prometheus Query
 
-- Step
-- Range
-- Function
 
+```java
+    private String step;
+    private String period;
+    private QueryRange range;
+    private String function;
+    private OutputFormat outputFormat;
+    private String dataHistory;
+    private GroupBy groupBy;
+    private boolean aggregateByStep;
+    private boolean fullFillGaps;
+    private boolean showTotals;
+    private List<PrometheusQueryFilter> filters;
+
+```
 ## Step
 > The step is the resolution of the data, or the distance between datapoints in a given range. 
 
@@ -46,27 +57,31 @@ Start and End must be passed as numeric date format UTC.
 ### Examples:
 
 ```json
-"definedRange": "1w"
+"range":{"
+  "definedRange": "1w"
+}
 ```
 or 
 
 ```json
+"range":{"
 "start": "124332523423"
 "end":"124332432423"
+}
 ```
 
 
 ## Function
 >The function is a enum that defiens what is the function applied to the metric.
 
-- 1 Open Query
-- 2 Accumulative
-- 3 Periodic
-- 4 Simple Sum
-- 5 Simple Count  
-- 6 Simple Periodic
-- 7 Max Overtime
-- 8 Min Overtime
+- 1 Open Query - When the method contains a query that is not one of the pre-defined functions bellow:
+- 2 Accumulative - Most comun in counter metrics, used to sum the values in an accumulative way trhough the timeline
+- 3 Periodic - Aggregates data by period calclulation trough the timeline. Because it is an calculation made in each step, the values can be sometimes not very accurate. To have a more precise aggrgation use Accumulative function with step aggregation.
+- 4 Simple Sum - Just sum data on the timeline
+- 5 Simple Count  - Just count data on thetimeline
+- 6 Simple Periodic - It is same as periodic but without considering historical aggregation
+- 7 Max Overtime - Calculates the max value on the timeline. Generally works well with Gauge metrics
+- 8 Min Overtime - Calculates the min value on the timeline. Generally works well with Gauge metrics
 - 
 ```
 Functions is mandatory
@@ -79,13 +94,30 @@ When function is not periodic period must be null
 ### Examples:
 
 ```json
-"function": "1"
+"function": "accumulative"
+"step": "1d"
 ```
 or 
 
 ```json
-"function": "3"
-"period":"1d"
+"function": "periodic"
+"period": "1d"
+```
+
+## Data History
+> Defines if the data will be calculated using historical data or not
+
+Values
+- historical
+- cleanHistorical
+```
+Data History is mandatory
+```
+
+### Examples:
+
+```json
+"dataHistory": "cleanHistorical"
 ```
 
 
