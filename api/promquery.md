@@ -87,3 +87,12 @@ or
 "function": "3"
 "period":"1d"
 ```
+
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/no_aggregation_historical.png" alt="Logo" width="300" >
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/no_aggregation_clean_historical.png" alt="Logo" width="300" >
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/step_aggregation_clean_historical.png" alt="Logo" width="300" >
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/ste_aggregation_clean_historical.png" alt="Logo" width="300" >
