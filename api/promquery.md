@@ -141,20 +141,27 @@ Step Aggregation is not mandatory
 "aggregateByStep": "false",
 "dataHistory": "historical"
 ``` 
+
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/no_aggregation_historical.png" alt="Logo" width="300" >
+
 ```json
 "aggregateByStep": "false",
 "dataHistory": "cleanHistorical"
 ``` 
+
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/no_aggregation_clean_historical.png" alt="Logo" width="300" >
+
 ```json
 "aggregateByStep": "true",
 "dataHistory": "cleanHistorical"
 ``` 
+
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/step_aggregation_clean_historical.png" alt="Logo" width="300" >
+
 ```json
 "aggregateByStep": "true",
 "dataHistory": "historical"
 ``` 
+
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/ste_aggregation_clean_historical.png" alt="Logo" width="300" >
 ## groupBy
