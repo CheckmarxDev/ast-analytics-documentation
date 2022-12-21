@@ -218,5 +218,20 @@ If you have multiple splitTags or dimentions, you have to add splitCombinations=
 "fullFillGaps": "true"
 ```
 
+## outputFormat
+> This parameter allow the api to convert the output data in a specific format. 
 
+Formats:
+- Series
+- Pie (Categories)
+- Trend
+- Point
 
+## filters
+> Filters allows the api to filter the data by specific values cointained on the filtered dimentions. 
+
+### Examples:
+
+```json
+"filters": "[{name:"source", values:["github","gitlab"]}]"
+```
