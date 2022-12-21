@@ -194,3 +194,29 @@ If you have multiple splitTags or dimentions, you have to add splitCombinations=
 ```
 
 
+
+
+## showTotals
+> If you want to have the calculations of the sum of all series or categories you can use showtotals=true. 
+
+
+### Examples:
+
+```json
+"showtotals": "true"
+```
+
+
+## fullFillGaps
+> This functionality allow the api to fix data from prometheus when there is no values on a specific step.
+> Prometheus give us an incomplete range timeline when this happens. the fullFillGaps=true will fix the timeline returning zero on the empty steps. 
+
+
+### Examples:
+
+```json
+"fullFillGaps": "true"
+```
+
+
+
