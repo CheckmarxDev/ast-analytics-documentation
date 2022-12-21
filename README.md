@@ -11,11 +11,11 @@
   </p>
 </div> 
 
-API
+## API
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md target="_blank">`Prometheus Query`</a>
-<!-- ABOUT THE PROJECT -->
 
+  <!-- ABOUT THE PROJECT -->
 ## Scan Event Metrics
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Scan Created`</a>
