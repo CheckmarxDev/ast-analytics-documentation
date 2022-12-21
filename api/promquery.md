@@ -164,4 +164,33 @@ Step Aggregation is not mandatory
 ``` 
 
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/ste_aggregation_clean_historical.png" alt="Logo" width="300" >
+
 ## groupBy
+> Each metric has it´s own dimentions. You can group data by a specific dimention of your metric.
+> Example. You can group data by the dimention "source" of the scan_created_metric
+
+### Examples:
+
+```json
+"groupBy": {
+    "splitTags":["source"],
+    "splitCombintions":false
+}
+```
+
+or
+
+```json
+"groupBy": {
+    "splitTags":["scanners"],
+    "splitCombintions":true
+}
+```
+
+```
+If the dimention has multiple values and you want to split the group by for each value you can set splitCombiinations = true;
+It works only when you have a single splitTag to be groupped by.
+If you have multiple splitTags or dimentions, you have to add splitCombinations=false
+```
+
+
