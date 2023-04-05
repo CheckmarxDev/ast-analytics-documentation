@@ -12,8 +12,10 @@
 </div> 
 
 ## ENTITIES
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/scan.md" target="_blank">`Scan`</a>
-
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/scan.md" target="_blank">`Scan related entities`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/project.md" target="_blank">`Project related entities`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/application.md" target="_blank">`Application related entities`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/vulnerability.md" target="_blank">`Vulnerabilities related entities`</a>
 ## API
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`Prometheus Query`</a>
