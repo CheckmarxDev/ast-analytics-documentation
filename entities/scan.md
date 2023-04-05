@@ -26,9 +26,18 @@
 |   scan_id String        | cloud_event.entityId                                                              |
 |   engine String         | one for each engine in cloud_event.scanners.split()                               |
 |   loc String            | sast_metadata(grpc:26500).getDetails().linesOfCode                                |
-|   scan_error String     | scans(grpc:26501).getDetails().scanFailureDetails                                 |
+|   scan_error String     | new ScanError()                                                                   |
 |   sources String        |                                                                                   |
 |   scan_type String      | if(sast)sast_metadata(grpc:26500).getDetails().type else null                     |
 |   execution_time BigInt | need Task from Sonia´s team to create  executionTime per engine.                  |
 |   engine_status String  | ?                                                                                 |
+
+## Scan Error
+
+| Field                   | Source                                                                            |
+| ----------------------- | ------                                                                            |
+| id String [pk]          | incremental                                                                       |
+| scan_id String          | cloud_event.entityId                                                              |                                     |    
+| scan_error_code String  | scans(grpc:26501).getDetails().scanFailureDetails                                 |    
+| description String      | scans(grpc:26501).getDetails().scanFailureDetails                                 |
 
