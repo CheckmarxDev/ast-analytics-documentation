@@ -11,7 +11,7 @@
 |   origin String                    | scans(grpc:50001).getDetails().scanOrigin                              |           
 |   status string                    | event                                                                  |          
 |   engine_execution_summaries Array | new EngineExecutionSumary[]                                            |          
-|   max_concurrent_scans integer     | Select from scans where datetime.now between created_at and updated_at |           
+|   concurrent_scans integer(0 or >1)| scan_created:Select count() from scans where status=created            |
 |   tags Array                       | ?                                                                      |           
 |   initiator String                 | ?                                                                      |           
 |   branch String                    | ?                                                                      |          
