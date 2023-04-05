@@ -12,7 +12,7 @@
 </div> 
 
 ## ENTITIES
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/entities/scan.md" target="_blank">`Scan`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/scan.md" target="_blank">`Scan`</a>
 
 ## API
 
