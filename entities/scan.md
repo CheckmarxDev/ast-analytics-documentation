@@ -1,3 +1,5 @@
+#Scans
+
 | Field                              | Source                                                                 |
 | ---------------------------------- | ---------------------------------------------------------------------- | 
 |   id                               | cloud_event.entityId                                                   | 
@@ -15,3 +17,18 @@
 |   tags Array                       | ?                                                                      |           
 |   initiator String                 | ?                                                                      |           
 |   branch String                    | ?                                                                      |          
+
+#EngineExecutionSummaries
+
+| Field                   | Source |
+| ----------------------- | ------ |
+|   id String [pk]        |        |
+|   scan_id String        |        |
+|   engine String         |        |
+|   loc String            |        |
+|   scan_error String     |        |
+|   sources String        |        |
+|   scan_type String      |        |
+|   execution_time BigInt |        |
+|   engine_status String  |        |
+
