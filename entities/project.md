@@ -10,5 +10,6 @@
 |   active boolean                 | project_deleted?true:false                    |
 |   created_at Date                | project_created dateTime.now                  |
 |   deleted_at Date                | project_delete dateTime.now                   |
+|   updated_at Date                | project_updated dateTime.now                   |
 |   criticality Integer            | ?                                              |
 |   groups String                  | scans(grpc:26502).getDetails().groups         |
