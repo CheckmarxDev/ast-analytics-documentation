@@ -6,13 +6,19 @@
   <h3 align="center">AST ANALYTICS DOCUMENTATION</h3>
 
   <p align="center">
-    Here you can find details about analytics:
+    Here you can find details about analytics implementation for cxOne.
+  </p>
+## SUMMARY
+  
+  The analytics project has several use cases that together requires a solution capable of storing, processing and exporting data to external or interna usage.
+  
+  
 - Entities
 - BI Export
 - API
 - KPIs
 - EVENTS
-  </p>
+- DIAGRAMS
 </div> 
 
 ## ENTITIES
