@@ -17,9 +17,24 @@
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/application.md" target="_blank">`Application related entities`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/vulnerability.md" target="_blank">`Vulnerabilities related entities`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/cxIam.md" target="_blank">`CxIam related entities`</a>
+
+## BI EXPORT
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Scans Summary`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Vulnerabilities Summary`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Contributors Summary`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`CxIam Summary`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Tenants Summary`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Licence Summary`</a>
+
+
+
 ## API
 
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`Prometheus Query`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`KPI Query`</a>
+
+## EVENTS
+
+## KPIS
 
   <!-- ABOUT THE PROJECT -->
 ## Scan Event Metrics
