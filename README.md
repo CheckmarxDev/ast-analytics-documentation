@@ -13,6 +13,10 @@
 > The analytics project has several use cases that together requires a solution capable of storing, processing and exporting data to external or interna usage.
 
 ## ENTITIES
+
+> Entities defined in this document, reflects the implementation of the new datastore for analytics.
+The purpose is to stora date in a more performatic and kpi oriented structure
+
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/scan.md" target="_blank">`Scan related entities`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/project.md" target="_blank">`Project related entities`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/application.md" target="_blank">`Application related entities`</a>
