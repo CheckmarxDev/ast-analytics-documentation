@@ -10,3 +10,5 @@
 |   active boolean                  | application_deleted?true:false            |
 |   created_at Date                 | application_created dateTime.now          |
 |   deleted_at Date                 | application_delete dateTime.now           |
+|   updated_at Date                 | application_updated dateTime.now           |
+|   criticality Integer            | scans(grpc:26503).getDetails().criticality  |
