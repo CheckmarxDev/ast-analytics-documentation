@@ -6,8 +6,12 @@
   <h3 align="center">AST ANALYTICS DOCUMENTATION</h3>
 
   <p align="center">
-    Here you can find details about metrics that were created for AST and the way to create new metrics.
-      
+    Here you can find details about analytics 
+    - Entities
+    - BI Export
+    - API
+    - KPIs
+    - EVENTS
   </p>
 </div> 
 
