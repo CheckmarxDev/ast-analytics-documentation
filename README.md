@@ -8,10 +8,11 @@
   <p align="center">
     Here you can find details about analytics implementation for cxOne.
   </p>
+</div> 
 ## SUMMARY
-   <p align="left">
-  The analytics project has several use cases that together requires a solution capable of storing, processing and exporting data to external or interna usage.
-  </p> 
+  
+> The analytics project has several use cases that together requires a solution capable of storing, processing and exporting data to external or interna usage.
+
   
 - Entities
 - BI Export
@@ -19,7 +20,7 @@
 - KPIs
 - EVENTS
 - DIAGRAMS
-</div> 
+
 
 ## ENTITIES
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/scan.md" target="_blank">`Scan related entities`</a>
