@@ -6,12 +6,12 @@
   <h3 align="center">AST ANALYTICS DOCUMENTATION</h3>
 
   <p align="center">
-    Here you can find details about analytics 
-    - Entities
-    - BI Export
-    - API
-    - KPIs
-    - EVENTS
+    Here you can find details about analytics:
+- Entities
+- BI Export
+- API
+- KPIs
+- EVENTS
   </p>
 </div> 
 
