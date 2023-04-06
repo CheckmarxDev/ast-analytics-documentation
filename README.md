@@ -15,7 +15,8 @@
 ## ENTITIES
 
 > Entities defined in this document, reflects the implementation of the new datastore for analytics.
-The purpose is to stora date in a more performatic and kpi oriented structure
+The purpose is to store date in a more performatic and kpi oriented structure.
+Entities will be implemented inside ast-analytics-datastore
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/scan.md" target="_blank">`Scan related entities`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/project.md" target="_blank">`Project related entities`</a>
@@ -45,6 +46,7 @@ Please note that document is a work in progress and will be updated until an agr
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-api`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-datastore`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-job`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-proto`</a>
 
 
 
