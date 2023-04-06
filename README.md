@@ -39,6 +39,14 @@ Please note that document is a work in progress and will be updated until an agr
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Licence Data Contract`</a>
 
 
+## REPOS
+
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-events`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-api`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-datastore`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-job`</a>
+
+
 
 ## API
 
