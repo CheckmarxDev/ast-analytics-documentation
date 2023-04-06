@@ -59,19 +59,19 @@ Please note that document is a work in progress and will be updated until an agr
 
 | Event           | Description                                  |
 | --------------- | -------------------------------------------- |
-| scan_created    |  The state of the vulnerability |
-| scan_completed  | The Severity of the vulnerability             |
-| scan_failed     | The status of the vulnerability                |
-| scan_partial    | The date the vulnerability has been found       |
-| scan_canceled   | The date the vulnerability has been resolved       |
-| project_canceled   | The date the vulnerability has been resolved       |
-| project_deleted   | The date the vulnerability has been resolved       |
-| project_updated   | The date the vulnerability has been resolved       |
-| application_created   | The date the vulnerability has been resolved       |
-| application_deleted   | The date the vulnerability has been resolved       |
-| application_associated  | The date the vulnerability has been resolved     |
-| application_updated   | The date the vulnerability has been resolved       |
-| vulnerabilities_state_changed   | The date the vulnerability has been resolved       |
+| scan_created    | After Scans starts running |
+| scan_completed  | After Scan is completed             |
+| scan_failed     | After Scan is failed                |
+| scan_partial    | After Scan is partialy completed       |
+| scan_canceled   | After Scan is canceled      |
+| project_created   | After project is created      |
+| project_deleted   | After projects is deleted       |
+| project_updated   | After project is updated       |
+| application_created   | After application is created       |
+| application_deleted   | After application is deleted     |
+| application_associated  | After application is associated     |
+| application_updated   | After application is updated      |
+| vulnerabilities_state_changed   | After scan vulnerability(s) state has changed  |
 
 ## KPIS
 
