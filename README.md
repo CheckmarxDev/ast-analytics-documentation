@@ -11,6 +11,7 @@
 </div> 
   
 > The analytics project has several use cases that together requires a solution capable of storing, processing and exporting data to external or interna usage.
+> All data will be stored in UTC and converted to other zones when queried.
 
 ## ENTITIES
 
