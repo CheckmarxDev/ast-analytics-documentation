@@ -12,15 +12,6 @@
   
 > The analytics project has several use cases that together requires a solution capable of storing, processing and exporting data to external or interna usage.
 
-  
-- Entities
-- BI Export
-- API
-- KPIs
-- EVENTS
-- DIAGRAMS
-
-
 ## ENTITIES
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/scan.md" target="_blank">`Scan related entities`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/project.md" target="_blank">`Project related entities`</a>
@@ -29,7 +20,7 @@
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/cxIam.md" target="_blank">`CxIam related entities`</a>
 
 ## BI EXPORT
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Scans Summary`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/scans.md" target="_blank">`Scans Summary`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Vulnerabilities Summary`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Contributors Summary`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`CxIam Summary`</a>
