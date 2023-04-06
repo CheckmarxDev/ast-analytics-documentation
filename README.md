@@ -9,9 +9,9 @@
     Here you can find details about analytics implementation for cxOne.
   </p>
 ## SUMMARY
-  
+   <p align="left">
   The analytics project has several use cases that together requires a solution capable of storing, processing and exporting data to external or interna usage.
-  
+  </p> 
   
 - Entities
 - BI Export
