@@ -14,9 +14,9 @@
 |   status string                    | event                                                                  |          
 |   engine_execution_summaries Array | new EngineExecutionSumary[]                                            |          
 |   concurrent_scans integer(0 or >1)| scan_created:Select count() from scans where status=created            |
-|   tags Array                       | scans(grpc:26501).getDetails().scansTags                               |         
-|   initiator String                 | ?                                                                      |           
-|   branch String                    | ?                                                                      |          
+|   tags Array                       | scans(grpc:26501).getDetails().initiator                               |         
+|   initiator String                 | scans(grpc:26501).getDetails().scansTags                               |    
+|   branch String                    | scans(grpc:26501).getDetails().branch.                                 |          
 
 ## EngineExecutionSummaries
 
@@ -27,17 +27,17 @@
 |   engine String         | one for each engine in cloud_event.scanners.split()                               |
 |   loc String            | sast_metadata(grpc:26500).getDetails().linesOfCode                                |
 |   scan_error String     | new ScanError()                                                                   |
-|   sources String        |                                                                                   |
+|   sources String        | Only, when has some vulnerability: results(grpc:26500).getsummary().language      |
 |   scan_type String      | if(sast)sast_metadata(grpc:26500).getDetails().type else null                     |
 |   execution_time BigInt | need Task from Sonia´s team to create  executionTime per engine.                  |
-|   engine_status String  | ?                                                                                 |
+|   engine_status String  | scans(grpc:26501).getDetails().statusDetails                                      |
 
 ## Scan Error
 
 | Field                   | Source                                                                            |
 | ----------------------- | ------                                                                            |
 | id String [pk]          | incremental                                                                       |
-| scan_id String          | cloud_event.entityId                                                              |                                     |    
+| scan_id String          | cloud_event.entityId                                                              |                                         
 | scan_error_code String  | scans(grpc:26501).getDetails().scanFailureDetails                                 |    
 | description String      | scans(grpc:26501).getDetails().scanFailureDetails                                 |
 
