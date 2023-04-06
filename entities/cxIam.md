@@ -1,6 +1,7 @@
 ## Users
 
 > Only when event.type="user_created" or event.type="user_updated"
+
 | Field              | Source |
 | ------------------ | ------ |
 |   id String [pk]   | event.entityId      |
