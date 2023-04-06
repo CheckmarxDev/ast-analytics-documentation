@@ -27,12 +27,12 @@ The purpose of this document is to define the format that matches the needs of t
 
 Please note that document is a work in progress and will be updated until an agreement between both teams has been reached. 
 
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/scans.md" target="_blank">`Scans Summary`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Vulnerabilities Summary`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Contributors Summary`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`CxIam Summary`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Tenants Summary`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Licence Summary`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/scans.md" target="_blank">`Scan Data Contract`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Vulnerabilities  Data Contract`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Contributors  Data Contract`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`CxIam  Data Contract`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Tenants Data Contract`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Licence Data Contract`</a>
 
 
 
