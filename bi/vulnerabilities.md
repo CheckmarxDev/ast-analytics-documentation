@@ -11,7 +11,6 @@ File : vulnerabilities_ddMMyyyy.txt
 | Status          | The status of the vulnerability              |
 | FindDate        | The date the vulnerability has been found    |
 | ResolvedDate    | The date the vulnerability has been resolved |
-| QueryId         | The Vulnerability Identification             |
 | ProjectId       | The Vulnerability Identification             |
 | ScanId          | The ScanId associated to vulnerability found |
 
