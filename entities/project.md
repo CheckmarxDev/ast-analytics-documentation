@@ -11,5 +11,5 @@
 |   created_at Date                | project_created dateTime.now                  |
 |   deleted_at Date                | project_delete dateTime.now                   |
 |   updated_at Date                | project_updated dateTime.now                   |
-|   criticality Integer            | ?                                              |
+|   criticality Integer            | ? Must be added to scans(project details) proto   |
 |   groups String                  | scans(grpc:26502).getDetails().groups         |
