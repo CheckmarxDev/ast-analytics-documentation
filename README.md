@@ -20,6 +20,13 @@
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/entities/cxIam.md" target="_blank">`CxIam related entities`</a>
 
 ## BI EXPORT
+
+> During the last few months, a new analytics solution is being designed in order to extract data from the CxOne product. This data comes from the different services of the product and consequently this data has different formats and information depending on the source of it.
+
+The purpose of this document is to define the format that matches the needs of the BI teams that will use the data. To facilitate this documentation process, the information has been divided into Entities that directly relate to the information that can be found in the services (for example, Scans Entity contains information on the scans (from scan creation to scan status).
+
+Please note that document is a work in progress and will be updated until an agreement between both teams has been reached. 
+
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/scans.md" target="_blank">`Scans Summary`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Vulnerabilities Summary`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Contributors Summary`</a>
