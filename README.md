@@ -92,7 +92,7 @@ Please note that document is a work in progress and will be updated until an agr
 ## KPIS
 
   <!-- ABOUT THE PROJECT -->
-## Scan Event Metrics
+##  Metrics
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Scan Created`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCompleted.md" target="_blank">`Scan Completed`</a>
@@ -113,17 +113,17 @@ Please note that document is a work in progress and will be updated until an agr
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/vulnerabilities/scannedPlatform.md" target="_blank">`scanned Platform`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Scan Duration`</a>
  
-## Project Event Metrics
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Project Created`</a>
 
-## Application Event Metrics
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Application Created`</a>
 
 
 <!-- GETTING STARTED -->
-## Creating new Metrics
+## Implementing Handlers
+## Adding new Fields
+
 
 
 <!-- LICENSE -->
