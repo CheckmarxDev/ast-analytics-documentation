@@ -64,14 +64,30 @@ Please note that document is a work in progress and will be updated until an agr
 | scan_failed     | After Scan is failed                |
 | scan_partial    | After Scan is partialy completed       |
 | scan_canceled   | After Scan is canceled      |
+
+| Event           | Description                                  |
+| --------------- | -------------------------------------------- |
 | project_created   | After project is created      |
 | project_deleted   | After projects is deleted       |
 | project_updated   | After project is updated       |
+
+| Event           | Description                                  |
+| --------------- | -------------------------------------------- |
 | application_created   | After application is created       |
 | application_deleted   | After application is deleted     |
 | application_associated  | After application is associated     |
 | application_updated   | After application is updated      |
+
+| Event           | Description                                  |
+| --------------- | -------------------------------------------- |
 | vulnerabilities_state_changed   | After scan vulnerability(s) state has changed  |
+
+| Event           | Description                                  |
+| --------------- | -------------------------------------------- |
+| user_account_login   | After user login  |
+| user_account_created   | After user created  |
+| user_account_deleted   | After user deleted  |
+| user_account_updated   | After user updated  |
 
 ## KPIS
 
