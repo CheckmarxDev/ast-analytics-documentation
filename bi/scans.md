@@ -42,5 +42,6 @@ File : Tenant_Info_ddMMyyyy.txt
 | ?? Total Applications deleted | The total of Applications deleted |
 | Total Login         | The Severity of the vulnerability            |
 | Distinct Users         | The status of the vulnerability              |
+| Total Contributors | The total number of contributors |
 
 
