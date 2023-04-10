@@ -2,7 +2,7 @@
 
 File : Scans_ddMMyyyy.txt
 
-| Required Fields         | Description                                                                                                                                                                                                                                                                                                                                                               |
+| Required Fields         | Description  |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Scan Identification     | The scan id should be provided in this   |
 | Tenant Id              | The tenant id should be provided in this  |
@@ -29,16 +29,16 @@ File : Scans_ddMMyyyy.txt
 
 File : Tenant_Info_ddMMyyyy.txt
 
->Max concurrent scans per Tenant, per day
+> Max concurrent scans per Tenant, per day
 
 | Required Fields         | Description         |     
 | Tenant Id              | The tenant id should be provided in this  |
 | Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
 | Scan Date (UTC)    | The datetime of the scan   |
-|Total Project created| The total of projects created|
-|?? Total Project created| The total of projects deleted|
-|?? Total Applications created| The total of projects created|
-|?? Total Applications created| The total of projects deleted|
+| Total Project created | The total of projects created |
+| ?? Total Project created | The total of projects deleted |
+| ?? Total Applications created | The total of projects created |
+| ?? Total Applications created | The total of projects deleted |
 
 
 
