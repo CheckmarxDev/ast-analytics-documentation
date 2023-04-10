@@ -35,7 +35,7 @@ File : Tenant_Info_ddMMyyyy.txt
 | --------------- | -------------------------------------------- |
 | Tenant Id              | The tenant id should be provided in this  |
 | Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
-| Scan Date (UTC)    | The datetime of the scan   |
+| File Date (UTC)    | The datetime of the file   |
 | Total Project created | The total of projects created |
 | ?? Total Project deleted | The total of projects deleted |
 | ?? Total Applications created | The total of Applications created |
