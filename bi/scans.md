@@ -40,6 +40,7 @@ File : Tenant_Info_ddMMyyyy.txt
 | ?? Total Project deleted | The total of projects deleted |
 | ?? Total Applications created | The total of Applications created |
 | ?? Total Applications deleted | The total of Applications deleted |
-
+| Total Login         | The Severity of the vulnerability            |
+| Distinct Users         | The status of the vulnerability              |
 
 
