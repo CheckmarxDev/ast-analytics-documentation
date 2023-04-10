@@ -38,7 +38,7 @@ Please note that document is a work in progress and will be updated until an agr
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Contributors  Data Contract`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`CxIam  Data Contract`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Tenants Data Contract`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`Licence Data Contract`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/vulnerabilities.md" target="_blank">`License Data Contract`</a>
 
 
 ## REPOS
