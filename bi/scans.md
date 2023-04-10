@@ -31,7 +31,8 @@ File : Scans_ddMMyyyy.txt
 
 File : Tenant_Info_ddMMyyyy.txt
 
-| Required Fields         | Description         |     
+| Required Fields         | Description         |  
+| --------------- | -------------------------------------------- |
 | Tenant Id              | The tenant id should be provided in this  |
 | Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
 | Scan Date (UTC)    | The datetime of the scan   |
