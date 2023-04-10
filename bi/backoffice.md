@@ -5,6 +5,13 @@ File: Backoffice_ddMMyyyy.txt
 
 | Required Fields | Description                                  |
 | --------------- | -------------------------------------------- |
-| Tenant ID           | The state of the vulnerability               |
-| Max Liscence         | The Severity of the vulnerability            |
-| Distinct Users         | The status of the vulnerability              |
+| Tenant Name     | The state of the vulnerability               |
+| Salesforce ID   |   |
+| Tenant ID       | The Severity of the vulnerability            |
+| Tenant Type     | The status of the vulnerability              |
+| Activation Date | The status of the vulnerability              |
+| Expiration Date         | The status of the vulnerability              |
+| Developers Amount         | Maximum contributing developers              |
+| License Status         | The status of the vulnerability              |
+| Deployment id      | |
+| Region | | 
