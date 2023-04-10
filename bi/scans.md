@@ -5,6 +5,7 @@ File : Scans_ddMMyyyy.txt
 | Required Fields         | Description                                                                                                                                                                                                                                                                                                                                                               |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Scan Identification     | The scan id should be provided in this   |
+| Tenant Id              | The tenant id should be provided in this  |
 | Project Id              | The Project id should be provided in this  |
 | Application Id          | ???(1 per line, or list) The Application id should be provided in this  |
 | Engine                  | Each line of the file should pertain only to one engine (SAST, SCA and IAC)|
