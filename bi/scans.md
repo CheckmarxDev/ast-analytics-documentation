@@ -37,9 +37,9 @@ File : Tenant_Info_ddMMyyyy.txt
 | Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
 | Scan Date (UTC)    | The datetime of the scan   |
 | Total Project created | The total of projects created |
-| ?? Total Project created | The total of projects deleted |
-| ?? Total Applications created | The total of projects created |
-| ?? Total Applications created | The total of projects deleted |
+| ?? Total Project deleted | The total of projects deleted |
+| ?? Total Applications created | The total of Applications created |
+| ?? Total Applications deleted | The total of Applications deleted |
 
 
 
