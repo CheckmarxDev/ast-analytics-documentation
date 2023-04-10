@@ -27,9 +27,9 @@ File : Scans_ddMMyyyy.txt
 
 ## Tenant Info Data
 
-File : Tenant_Info_ddMMyyyy.txt
-
 > Max concurrent scans per Tenant, per day
+
+File : Tenant_Info_ddMMyyyy.txt
 
 | Required Fields         | Description         |     
 | Tenant Id              | The tenant id should be provided in this  |
