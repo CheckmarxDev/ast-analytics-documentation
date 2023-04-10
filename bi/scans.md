@@ -18,10 +18,22 @@ File : Scans_ddMMyyyy.txt
 | Scan Origin             | This field should contain the origin |
 | Scan Type               | This field should inform if the scan was Full or Incremental (only for SAST)  |
 | Lines of Code           | his field should contain the information on the lines of code in the scan<br><br>(Added only for relevant engines (maybe only SAST) |
-| Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
 | ??(with predicate?)Total Info    | The sum of all info vulnerabilities on this scan   |
 | ??(with predicate?)Total Low    | The sum of all low vulnerabilities on this scan   |
 | ??(with predicate?)Total Medium    | The sum of all medium vulnerabilities on this scan   |
 | ??(with predicate?)Total High    | The sum of all high vulnerabilities on this scan   |
 | Scan Date (UTC)    | The datetime of the scan   |
+
+
+>Max concurrent scans per Tenant, per day
+| Required Fields         | Description         |     
+| Tenant Id              | The tenant id should be provided in this  |
+| Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
+| Scan Date (UTC)    | The datetime of the scan   |
+|Total Project created| The total of projects created|
+|?? Total Project created| The total of projects deleted|
+|?? Total Applications created| The total of projects created|
+|?? Total Applications created| The total of projects deleted|
+
+
 
