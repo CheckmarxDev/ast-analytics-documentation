@@ -31,6 +31,8 @@
 |   scan_type String      | if(sast)sast_metadata(grpc:26500).getDetails().type else null                     |
 |   execution_time BigInt | need Task from Sonia´s team to create  executionTime per engine.                  |
 |   engine_status String  | scans(grpc:26501).getDetails().statusDetails                                      |
+|   engine_status String  | scans(grpc:26501).getDetails().statusDetails                                      |
+|   severities            | new EngineSeverities[]                                                            |
 
 ## Scan Error
 
@@ -41,3 +43,12 @@
 | scan_error_code String  | scans(grpc:26501).getDetails().scanFailureDetails                                 |    
 | description String      | scans(grpc:26501).getDetails().scanFailureDetails                                 |
 
+
+
+## Scan Engine Severities
+
+| Field                   | Source                                                                            |
+| ----------------------- | ------                                                                            |                                           
+| scan_id String          | cloud_event.entityId                                                              |                                         
+| severity String         | (LOW,MEDIUM,HIGH,INFO,...)                                                        |    
+| counter  int.           | Total of vulnerabilities on the engine/scan  |
