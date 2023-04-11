@@ -46,6 +46,8 @@
 
 
 ## Scan Engine Severities
+> Data does not change. If we change seveity or state to a vulnerability on the UI
+> the replacement of the new values should be done dynamically using the table vulnerabilitiesDefinitions
 
 | Field                   | Source                                                                            |
 | ----------------------- | ------                                                                            |                                           
