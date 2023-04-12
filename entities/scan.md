@@ -55,13 +55,3 @@
 | severity String         | (LOW,MEDIUM,HIGH,INFO,...)                                                        |    
 | counter  int.           | Total of vulnerabilities on the engine/scan  |
 
-
-
-# vulnerabilities Definitions
-| Field                   | Source                                                                            |
-| ----------------------- | ------                                                                            |                                           
-| queryId String          |                                                            |                                         
-| similarityId String         |                                                        |    
-| projectId  int.           | |
-| state  enumState           |  |
-| severity  enumSeverity          |  |
