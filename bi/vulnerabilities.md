@@ -1,6 +1,7 @@
 ## Vulnerabilities Data
 An aggregation of the vulnerabilities should be added to each row, per engine and per status/severity/state.
-File : vulnerabilities_ddMMyyyy.txt
+
+File : Vulnerabilities_YYYY-MM-DD.txt
 
 >  Limitations of 50k lines
 
