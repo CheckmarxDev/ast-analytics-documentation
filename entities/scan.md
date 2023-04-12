@@ -54,3 +54,14 @@
 | severity String         | (LOW,MEDIUM,HIGH,INFO,...)                                                        |    
 | counter  int.           | Total of vulnerabilities on the engine/scan  |
 
+
+## Scan Engine Status
+> Data does not change. If we change seveity or state to a vulnerability on the UI
+> the replacement of the new values should be done dynamically using the table vulnerabilitiesDefinitions
+
+| Field                   | Source                                                                            |
+| ----------------------- | ------                                                                            |                                           
+| scan_id String          | cloud_event.entityId                                                              |                                         
+| status String         | (LOW,MEDIUM,HIGH,INFO,...)                                                        |    
+| counter  int.           | Total of vulnerabilities on the engine/scan  |
+
