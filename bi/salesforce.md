@@ -1,6 +1,6 @@
 ## Salesforce Data
 
-File: Salesforce_ddMMyyyy.txt
+File: Salesforce_YYYY-MM-DD.txt
 
 | Required Fields | Description                                  |
 | --------------- | -------------------------------------------- |
