@@ -1,7 +1,7 @@
 
 ## Backoffice Data
 
-File: Backoffice_ddMMyyyy.txt
+File: Backoffice_YYYY-MM-DD.txt
 
 | Required Fields   | Description                                                      |
 | ----------------- | ---------------------------------------------------------------- |
