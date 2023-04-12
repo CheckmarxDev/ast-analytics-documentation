@@ -16,7 +16,8 @@
 |   concurrent_scans integer(0 or >1)| scan_created:Select count() from scans where status=created            |
 |   tags Array                       | scans(grpc:26501).getDetails().initiator                               |         
 |   initiator String                 | scans(grpc:26501).getDetails().scansTags                               |    
-|   branch String                    | scans(grpc:26501).getDetails().branch.                                 |          
+|   branch String                    | scans(grpc:26501).getDetails().branch.                                 |   
+|   total_execution_time  BigInt           |                                                                  |
 
 ## EngineExecutionSummaries
 
