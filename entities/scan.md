@@ -27,7 +27,7 @@
 |   scan_id String        | cloud_event.entityId                                                              |
 |   engine String         | one for each engine in cloud_event.scanners.split()                               |
 |   loc String            | sast_metadata(grpc:26500).getDetails().linesOfCode                                |
-|   scan_error String     | new ScanError()                                                                   |
+|   scan_error_code String | scans(grpc:26501).getDetails().scanFailureDetails   (Descriptions associated to table below Scan Error) |
 |   sources String        | Only, when has some vulnerability: results(grpc:26500).getsummary().language      |
 |   scan_type String      | if(sast)sast_metadata(grpc:26500).getDetails().type else null                     |
 |   execution_time BigInt | need Task from Sonia´s team to create  executionTime per engine.                  |
@@ -35,12 +35,10 @@
 |   engine_status String  | scans(grpc:26501).getDetails().statusDetails                                      |
 |   severities            | new EngineSeverities[]                                                            |
 
-## Scan Error
+## Scan Error 
 
 | Field                   | Source                                                                            |
-| ----------------------- | ------                                                                            |
-| id String [pk]          | incremental                                                                       |
-| scan_id String          | cloud_event.entityId                                                              |                                         
+| ----------------------- | ------                                                                            |                                        
 | scan_error_code String  | scans(grpc:26501).getDetails().scanFailureDetails                                 |    
 | description String      | scans(grpc:26501).getDetails().scanFailureDetails                                 |
 
