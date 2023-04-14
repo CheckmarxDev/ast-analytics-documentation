@@ -38,6 +38,8 @@ Please note that document is a work in progress and will be updated until an agr
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/salesforce.md" target="_blank">`Salesforce Data Contract`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/backoffice.md" target="_blank">`Back Office Data Contract`</a>
 
+> each entity must have a audit field to control the data export.
+> A flag (bit) with true or false to show if the line was exported or not
 
 ## REPOS
 
