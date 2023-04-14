@@ -87,6 +87,22 @@ Please note that document is a work in progress and will be updated until an agr
 | user_account_deleted   | After user deleted  |
 | user_account_updated   | After user updated  |
 
+
+## OPEN ISSUES
+
+ - Predicates from APISEC must be required by task to be developed (To Notify BI team)
+ - Execution Time per engine must be required by task to be developed
+ - Add to Sales force file liscence dates (To be discussed how to solve)
+
+## CI VARIABLES
+
+| Event           | Description                                  |
+| --------------- | -------------------------------------------- |
+| var name   | var description  |
+
+
+
+
 ## KPIS
 
   <!-- ABOUT THE PROJECT -->
