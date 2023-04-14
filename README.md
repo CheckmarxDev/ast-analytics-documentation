@@ -44,7 +44,7 @@ Please note that document is a work in progress and will be updated until an agr
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-metrics`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-api`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-datastore`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-job`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-exporter-job`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-proto`</a>
 
 
@@ -98,7 +98,7 @@ Please note that document is a work in progress and will be updated until an agr
 
 | Event           | Description                                  |
 | --------------- | -------------------------------------------- |
-| var name   | var description  |
+| ANALYTICS_READ_DB_HOST   | Variable to store the host of new datastore for analaytics  |
 
 
 
