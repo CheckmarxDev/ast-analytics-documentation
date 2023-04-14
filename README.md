@@ -41,6 +41,8 @@ Please note that document is a work in progress and will be updated until an agr
 > each entity must have a audit field to control the data export.
 > A flag (bit) with true or false to show if the line was exported or not
 
+A notification should be sent if a exception is raised on the line processing.
+
 ## REPOS
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-metrics`</a>
