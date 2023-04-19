@@ -44,9 +44,14 @@ Please note that document is a work in progress and will be updated until an agr
 A notification should be sent if a exception is raised on the line processing.
 
 ## DIAGRAMS
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/diagrams/main.md" target="_blank">
-<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/main.png" alt="Main" width="300" >
+> Check all diagrams in draw.io
+
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/diagrams/main.draw.io" target="_blank">
+Main Diagram
 </a>
+
+<img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/main.png" alt="Main" width="300" >
+
 
 ## REPOS
 
