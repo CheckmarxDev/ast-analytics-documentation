@@ -131,8 +131,6 @@ A notification should be sent if a exception is raised on the line processing.
 
 ## KPIS
 
-  <!-- ABOUT THE PROJECT -->
-##  Metrics
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCreated.md" target="_blank">`Scan Created`</a>
 -  <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/metrics/scan/scanCompleted.md" target="_blank">`Scan Completed`</a>
