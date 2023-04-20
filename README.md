@@ -117,7 +117,15 @@ A notification should be sent if a exception is raised on the line processing.
 | Event           | Description                                  |
 | --------------- | -------------------------------------------- |
 | ANALYTICS_READ_DB_HOST   | Variable to store the host of new datastore for analaytics  |
-
+|ANALYTICS_READ_DB_PORT|   |
+|ANALYTICS_READ_DB|   |
+|ANALYTICS_READ_DB_USER|   |
+|ANALYTICS_READ_DB_PASS|   |
+|ANALYTICS_WRITE_DB_HOST|   |
+|ANALYTICS_WRITE_DB_PORT|   |
+|ANALYTICS_WRITE_DB|   |
+|ANALYTICS_WRITE_DB_USER|   |
+|ANALYTICS_WRITE_DB_PASS|   |
 
 
 
