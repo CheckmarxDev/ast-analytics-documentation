@@ -2,19 +2,19 @@
 
 | Field                              | Source                                                                 |
 | ---------------------------------- | ---------------------------------------------------------------------- | 
-|   id [pk]                          | cloud_event.entityId                                                   | 
-|   tenant_id                        | cloud_event.tenant                                                     | 
-|   project_id                       | scans(grpc:26501).getDetails().projectId                               | 
-|   active boolean                   | event if(scan_created) true, if(scan_deleted) false                    |   
-|   created_at Date                  | event dateTime.now                                                     |         
-|   deleted_at Date                  | event dateTime.now                                                     |           
-|   updated_at Date                  | event dateTime.now                                                     |           
+|   id [pk] UUID                     | cloud_event.entityId                                                   | 
+|   tenant_id   UUID                 | cloud_event.tenant                                                     | 
+|   project_id  UUID                 | scans(grpc:26501).getDetails().projectId                               | 
+|   deleted boolean                  | event if(scan_created) true, if(scan_deleted) false                    |   
+|   created_at long(UTC)             | event dateTime.now                                                     |         
+|   deleted_at long(UTC)             | event dateTime.now                                                     |           
+|   updated_at long(UTC)             | event dateTime.now                                                     |           
 |   source String                    | scans(grpc:26501).getDetails().scanSource                              |           
 |   origin String                    | scans(grpc:26501).getDetails().scanOrigin                              |           
 |   status string                    | event                                                                  |          
 |   engine_execution_summaries Array | new EngineExecutionSumary[]                                            |          
 |   concurrent_scans integer(0 or >1)| scan_created:Select count() from scans where status=created            |
-|   tags Array                       | scans(grpc:26501).getDetails().initiator                               |         
+|   tags List<String>                       | scans(grpc:26501).getDetails().initiator                               |         
 |   initiator String                 | scans(grpc:26501).getDetails().scansTags                               |    
 |   branch String                    | scans(grpc:26501).getDetails().branch.                                 |   
 |   total_execution_time  BigInt           |                                                                  |
