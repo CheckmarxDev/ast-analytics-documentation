@@ -36,8 +36,10 @@ File : Tenant_Info_YYYY-MM-DD.txt
 | Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
 | File Date (UTC)    | The datetime of the file   |
 | Total Project created | The total of projects created |
-| Total Login         | The Severity of the vulnerability            |
-| Distinct Users         | The status of the vulnerability              |
+| Total Login per day        | Total Login           |
+| Distinct Users by Login        | ?? Total of users that attempted login              |
+| Users Created         | ?? Total of users that attempted login              |
+| Users Deleted         | ?? Total of users that attempted login              |
 | Total Contributors | The total number of contributors |
 
 
