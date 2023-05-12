@@ -23,23 +23,3 @@ File : Scans_YYYY-MM-DD.txt
 | Total High (Engine provided data, no user changes consideration)    | The sum of all high vulnerabilities on this scan   |
 | Scan Date (UTC)    | The datetime of the scan   |
 
-
-## Tenant Info Data
-
-> Max concurrent scans per Tenant, per day
-
-File : Tenant_Info_YYYY-MM-DD.txt
-
-| Required Fields         | Description         |  
-| --------------- | -------------------------------------------- |
-| Tenant Id              | The tenant id should be provided in this  |
-| Max Concurrent Scans    | This field should provide the maximum concurrent scans   |
-| File Date (UTC)    | The datetime of the file   |
-| Total Project created | The total of projects created |
-| Total Login per day        | Total Login           |
-| Distinct Users by Login        | ?? Total of users that attempted login              |
-| Users Created         | ?? Total of users that attempted login              |
-| Users Deleted         | ?? Total of users that attempted login              |
-| Total Contributors | The total number of contributors |
-
-
