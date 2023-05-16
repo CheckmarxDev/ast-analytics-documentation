@@ -34,7 +34,7 @@ The purpose of this document is to define the format that matches the needs of t
 Please note that document is a work in progress and will be updated until an agreement between both teams has been reached. 
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/scans.md" target="_blank">`Scan Data Contract`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/cxiam.md" target="_blank">`CxIam  Data Contract`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/cxiam.md" target="_blank">`TenantInfo  Data Contract`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/salesforce.md" target="_blank">`Salesforce Data Contract`</a>
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/bi/backoffice.md" target="_blank">`Back Office Data Contract`</a>
 
@@ -48,85 +48,71 @@ A notification should be sent if a exception is raised on the line processing.
 > Check all diagrams in draw.io
 
 - <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/diagrams/main.draw.io" target="_blank">Main Diagram</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/diagrams/main.draw.io" target="_blank">ast-metrics diagram</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/diagrams/main.draw.io" target="_blank">ast-analytics-api diagram</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/diagrams/main.draw.io" target="_blank">ast-analytics-exporter</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/diagrams/main.draw.io" target="_blank">BI Flow</a>
-
-
 <img src="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/imgs/main.png" alt="Main" width="300" >
 
 
 ## REPOS
 
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-metrics`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-api`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-datastore`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-exporter-job`</a>
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`ast-analytics-proto`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics" target="_blank">`ast-metrics`</a>
+- <a href="https://github.com/CheckmarxDev/data-analytics-api " target="_blank">`ast-analytics-api`</a>
+- <a href="https://github.com/CheckmarxDev/analytics-datastore" target="_blank">`ast-analytics-datastore`</a>
+- <a href="https://github.com/CheckmarxDev/ast-analytics-exporter" target="_blank">`ast-analytics-exporter-job`</a>
+- <a href="https://github.com/CheckmarxDev/ast-proto-lib" target="_blank">`ast-proto-lib`</a>
 
 
-
-## API
-
-- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/api/promquery.md" target="_blank">`KPI Query`</a>
 
 ## EVENTS
-
-| Event           | Description                                  |
-| --------------- | -------------------------------------------- |
-| scan_created    | After Scans starts running |
-| scan_completed  | After Scan is completed             |
-| scan_failed     | After Scan is failed                |
-| scan_partial    | After Scan is partialy completed       |
-| scan_canceled   | After Scan is canceled      |
-
-| Event           | Description                                  |
-| --------------- | -------------------------------------------- |
-| project_created   | After project is created      |
-| project_deleted   | After projects is deleted       |
-| project_updated   | After project is updated       |
-
-| Event           | Description                                  |
-| --------------- | -------------------------------------------- |
-| application_created   | After application is created       |
-| application_deleted   | After application is deleted     |
-| application_associated  | After application is associated     |
-| application_updated   | After application is updated      |
-
-| Event           | Description                                  |
-| --------------- | -------------------------------------------- |
-| vulnerabilities_state_changed   | After scan vulnerability(s) state has changed  |
-
-| Event           | Description                                  |
-| --------------- | -------------------------------------------- |
-| user_account_login   | After user login  |
-| user_account_created   | After user created  |
-| user_account_deleted   | After user deleted  |
-| user_account_updated   | After user updated  |
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/events/scan_events.md" target="_blank">`Scan Events`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/events/project_events.md" target="_blank">`Project Events`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/events/application_events.md" target="_blank">`Application Events`</a>
+- <a href="https://github.com/CheckmarxDev/ast-proto-libhttps://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/events/vulnerability_events.md" target="_blank">`Vulnerability Events`</a>
+- <a href="https://github.com/CheckmarxDev/ast-metrics-documentation/blob/master/events/user_events.md" target="_blank">`User Events`</a>
 
 
-## OPEN ISSUES
+## GRPC DEPENDENCIES
 
- - Predicates from APISEC must be required by task to be developed (To Notify BI team)
- - Execution Time per engine must be required by task to be developed
- - Add to Sales force file liscence dates (To be discussed how to solve)
+```yml
+
+    analytics-datastore:
+      address: "${ANALYTICS_DATASTORE_GRPC_ADDRESS:static://localhost:25836}"
+    core-scans:
+      address: ${SCANS_GRPC_ADDRESS:static://localhost:26501s}
+    core-projects:
+      address: "${PROJECTS_GRPC_ADDRESS:static://localhost:26502}"
+    core-applications:
+      address: "${APPLICATIONS_GRPC_ADDRESS:static://localhost:26503}"
+    core-summary:
+      address: "${CORE_SUMMARY_RESULTS_GRPC_ADDRESS:static://localhost:27502}"
+    core-metadata:
+      address: "${CORE_METADATA_RESULTS_GRPC_ADDRESS:static://localhost:26505}"
+    sca-results:
+      address: "${CORE_SCA_RESULTS_GRPC_ADDRESS:static://localhost:25504}"
+    kics-results:
+      address: "${CORE_KICS_RESULTS_GRPC_ADDRESS:static://localhost:24503}"
+    sast-results:
+      address: "${CORE_SAST_RESULTS_GRPC_ADDRESS:static://localhost:23500}"
+    core-featureflag:
+      address: "${FEATURE_FLAG_GRPC_ADDRESS:static://localhost:20500}"
+    sast-metadata:
+        address: "${SAST_METADATA_GRPC_ADDRESS:static://localhost:22500}"
+    kics-metadata:
+        address: "${KICS_METADATA_GRPC_ADDRESS:static://localhost:21500}"
+```
 
 ## CI VARIABLES
 
-| Event           | Description                                  |
+| Component Variable           | Secret                                  |
 | --------------- | -------------------------------------------- |
-| ANALYTICS_READ_DB_HOST   | Variable to store the host of new datastore for analaytics  |
-|ANALYTICS_READ_DB_PORT|   |
-|ANALYTICS_READ_DB|   |
-|ANALYTICS_READ_DB_USER|   |
-|ANALYTICS_READ_DB_PASS|   |
-|ANALYTICS_WRITE_DB_HOST|   |
-|ANALYTICS_WRITE_DB_PORT|   |
-|ANALYTICS_WRITE_DB|   |
-|ANALYTICS_WRITE_DB_USER|   |
-|ANALYTICS_WRITE_DB_PASS|   |
-
+|ANALYTICS_READ_DB_HOST   | analyticssql_read_host  |
+|ANALYTICS_READ_DB_PORT|   analyticssql_read_port|
+|ANALYTICS_READ_DB|   analytics| 
+|ANALYTICS_READ_DB_USER|   analyticssql_read_username| 
+|ANALYTICS_READ_DB_PASS|   analyticssql_read_password| 
+|ANALYTICS_WRITE_DB_HOST|   analyticssql_write_host|
+|ANALYTICS_WRITE_DB_PORT|   analyticssql_write_port|
+|ANALYTICS_WRITE_DB|    analytics|
+|ANALYTICS_WRITE_DB_USER|   analyticssql_write_username|
+|ANALYTICS_WRITE_DB_PASS|   analyticssql_write_password|
 
 
 ## KPIS
