@@ -71,6 +71,9 @@ A notification should be sent if a exception is raised on the line processing.
 
 ## GRPC DEPENDENCIES
 
+- <a href="https://github.com/CheckmarxDev/grpc-docs" target="_blank">`New Grpc Documentation`</a>
+
+
 ```yml
 
     analytics-datastore:
