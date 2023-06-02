@@ -7,8 +7,7 @@ File : Scans_YYYY-MM-DD.txt
 | Scan Identification     | The scan id should be provided in this   |
 | Tenant Id              | The tenant id should be provided in this  |
 | Project Id              | The Project id should be provided in this  |
-| Engine                  | Each line of the file should pertain only to one engine (SAST, SCA and IAC)|
-| Prescan                 | The Prescan should be included for each scan.|
+| Engine                  | Each line of the file should pertain only to one engine (SAST, SCA and IAC). Every report should also have a line with the Prescan|
 | Scan Status | Status of the single scan|
 | Engine Status                  | Each line of the file should pertain only to the Status of the current Engine (for example, Line 1: Engine SAST → Status Completed<br>Line 2: Engine SCA → Status Failed            Line 3: Engine KICS → Status Completed)<br>A full status should be added to every row (for example, if 2 engines complete but 1 fails the full status would be Partial in every line) |
 | Execution Time (possibly not provided while not per engine)          | The execution time resolution should be in minutes<br>The execution time should be per engine (for each engine, the time to complete the scan should be added) |
