@@ -1,0 +1,1 @@
+select * from scan limit 1
